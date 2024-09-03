@@ -5,6 +5,21 @@
   color: white;
 }
 
+//Effects
+.FilterBrightnessON{
+  filter: brightness(30%);
+}
+.LinkUnderLi{
+  text-decoration-line: underline;
+  text-decoration-thickness: 15px;
+  :hover{
+    text-decoration-thickness: 1px;
+  }
+}
+.LinkUnderP{
+  border-bottom: 15px solid white;
+}
+
 body{
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
@@ -34,15 +49,7 @@ body{
     font-weight: 800;
     font-family: Courgette;      
   }
-  .LinkUnder{
-    text-decoration-line: underline;
-    text-decoration-thickness: 15px;
-    border-bottom: 15px solid white;
-    :hover{
-      text-decoration-thickness: 1px;
-      border-bottom: 1px solid white;  
-    }
-  }
+  
   #HomeNav{
     width: 90%;
     height: 30vh;
@@ -70,7 +77,6 @@ body{
           height: 100%; 
           border-radius: 50%;
           border: 5px white solid;
-          filter: brightness(30%);
         }  
       }
       .LetterContainer{
@@ -92,6 +98,21 @@ body{
           font-weight: 800;
         }
       }
+      .LinkContainer{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .ForLink{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: transparent;
+
+        }
+      }
     }
   }
   #Footer{
@@ -104,6 +125,7 @@ body{
         img{
           height: 100%;
           border: 1px solid white;
+          border-radius: 5px;
         }
       }
       #contactMe{
