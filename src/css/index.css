@@ -21,33 +21,37 @@
   border-bottom: 15px solid white;
 }
 
+.Courgette {
+  font-family: Courgette;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+ul {
+  font-size: 20px;
+  padding-top: 20px;
+}
+ul li {
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 800;
+}
+
 body {
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
-}
-body h1 {
-  font-size: 36px;
-  font-family: Courgette;
-}
-body h2 {
-  font-size: 28px;
-  font-family: Courgette;
-}
-body ul {
-  font-size: 20px;
-  font-family: Courgette;
-  padding-top: 20px;
-}
-body ul li {
-  padding-bottom: 20px;
-}
-body p {
-  font-size: 24px;
-  font-weight: 800;
-  font-family: Courgette;
 }
 body #HomeNav {
   width: 90%;
