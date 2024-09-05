@@ -209,12 +209,40 @@ body #About .AboutContainer .languageArea .language {
 body #About .AboutContainer .languageArea .mask {
   background-color: white !important;
 }
-body #Projects {
-  min-height: 100vh;
-}
 body #Skills {
   min-height: 100vh;
-  background-color: green;
+}
+body #Skills .SkillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+body #Skills .SkillsContainer .SkillBox {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  background-color: rgba(0, 49, 128, 0.4039215686);
+  border: 1px solid #006caf;
+}
+body #Skills .SkillsContainer .SkillBox p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 5px;
+}
+body #Skills .SkillsContainer .SkillBox .ImgBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+body #Skills .SkillsContainer .SkillBox .ImgBox img {
+  max-width: 100%;
+  border: 1px white solid;
+}
+body #Skills .SkillsContainer .SkillBox .ImgBox p {
+  font-size: 20px;
+  font-weight: 800;
 }
 body #WorkExperience {
   min-height: 100vh;
