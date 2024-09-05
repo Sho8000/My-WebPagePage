@@ -5,6 +5,10 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .FilterBrightnessON {
   filter: brightness(30%);
 }
@@ -19,6 +23,31 @@
 
 .NoTextDec {
   text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  height: 230px;
+  position: relative;
+}
+.title h2 {
+  margin-top: 100px;
+}
+.title .verticalLineTop {
+  position: absolute;
+  height: 100px;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  top: 0;
+  left: 50%;
+}
+.title .verticalLineBottom {
+  position: absolute;
+  height: 50px;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  bottom: 0;
+  left: 50%;
 }
 
 .Courgette {
@@ -68,15 +97,50 @@ body #HomeNav .headerContainer .headerAboutMe {
   width: 90%;
   position: fixed;
 }
-body #HomeNav .headerContainer .NavItems {
+body #HomeNav .headerContainer .NavContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   z-index: 999;
-  width: 80%;
-  padding-top: 3rem;
-  background-color: rgba(0, 0, 255, 0.219);
-  list-style: none;
+  width: 100vw;
+  height: 100vh;
   right: 0;
-  transform: translateX(100%);
+  top: 0;
+  background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   position: fixed;
+  transform: translateX(100%);
+}
+body #HomeNav .headerContainer .NavContainer .Navbar {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+body #HomeNav .headerContainer .NavContainer .Navbar .NavItems {
+  list-style: none;
+  font-size: 16px;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  overflow-x: hidden;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents {
+  display: flex;
+  max-width: 100%;
+  height: 25vh;
+  justify-content: center;
+  border: 3px solid #003180;
+  position: relative;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents img {
+  height: 100%;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: 3px 3px 3px #003180, -3px -3px 3px #003180, -3px 3px 3px #003180, 3px -3px 3px #003180, 3px 0px 3px #003180, -3px 0px 3px #003180, 0px 3px 3px #003180, 0px -3px 3px #003180;
+  top: 50%;
+  transform: translateY(-50%);
 }
 body #About {
   min-height: calc(100vh - 100px);
@@ -123,7 +187,11 @@ body #About .AboutContainer .textArea {
   margin: auto;
 }
 body #About .AboutContainer .textArea p {
-  padding-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
   font-size: 16px;
   font-weight: 400;
 }
@@ -131,7 +199,7 @@ body #About .AboutContainer .languageArea {
   margin: auto;
   width: 90px;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   margin-bottom: 10px;
 }
 body #About .AboutContainer .languageArea .language {
@@ -143,7 +211,6 @@ body #About .AboutContainer .languageArea .mask {
 }
 body #Projects {
   min-height: 100vh;
-  background-color: yellow;
 }
 body #Skills {
   min-height: 100vh;
@@ -154,7 +221,20 @@ body #WorkExperience {
   background-color: red;
 }
 body #Footer {
-  height: 100vh;
+  min-height: 25vh;
+  text-align: center;
+  place-content: center;
+}
+body #Footer .FooterContainer .Links {
+  height: 30px;
+}
+body #Footer .FooterContainer .Links img {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+body #Footer .FooterContainer #contactMe {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=AboutMe.css.map */
