@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+//Effects
+html{
+  scroll-behavior: smooth;
+}
+
+.FilterBrightnessON{
+  filter: brightness(30%);
+}
+.LinkUnderLi{
+  text-decoration-line: underline;
+  text-decoration-thickness: 15px;
+  :hover{
+    text-decoration-thickness: 1px;
+  }
+}
+.LinkUnderP{
+  border-bottom: 15px solid white;
+}
+.NoTextDec{
+  text-decoration: none;
+}
+.title{
+  text-align: center;
+  height: 230px;
+  position: relative;
+  h2{
+    margin-top: 100px;
+  }
+  .verticalLineTop{
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    top: 0;
+    left: 50%;
+  }
+  .verticalLineBottom{
+    position: absolute;
+    height: 50px;
+    width: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+//font
+.Courgette{
+  font-family: Courgette;      
+}
+h1{
+  font-size: 36px;
+
+}
+h2{
+  font-size: 28px;
+}
+ul{
+  font-size: 20px;
+  padding-top: 20px;
+  li{
+    padding-bottom: 20px;
+  }
+}
+p{
+  font-size: 24px;
+  font-weight: 800;
+}
+
+body{
+  height: 100vh;
+  background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}

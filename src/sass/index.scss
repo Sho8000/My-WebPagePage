@@ -7,17 +7,52 @@
 
 //Effects
 .FilterBrightnessON{
+  transition: 2s;
   filter: brightness(30%);
 }
+
 .LinkUnderLi{
-  text-decoration-line: underline;
-  text-decoration-thickness: 15px;
-  :hover{
-    text-decoration-thickness: 1px;
-  }
+  text-decoration-line: none;
 }
+.LinkUnderLi::after{
+  background-color: white; 
+  bottom: 8px; 
+  content: ""; 
+  height: 10px;
+  left: 0; 
+  position: absolute; 
+  transition: all .5s;
+  width: 100%;
+}
+.LinkUnderLi:hover::after {
+  bottom: 18px;
+  opacity: 1;
+  height: 1px;
+}
+.LinkUnderH{
+  text-decoration-line: none;
+}
+.LinkUnderH::after{
+  background-color: white; 
+  bottom: -8px; 
+  content: ""; 
+  height: 10px;
+  left: 0; 
+  position: absolute; 
+  transition: all .5s;
+  width: 100%;
+}
+.LinkUnderH:hover::after {
+  bottom: 6px;
+  opacity: 1;
+  height: 1px;
+}
+
 .LinkUnderP{
   border-bottom: 15px solid white;
+}
+.HoverLinkPH:hover{
+  border-bottom: 1px solid white;
 }
 
 //font
@@ -58,6 +93,10 @@ body{
       padding-top: 2rem;
       .NavItems{
         list-style: none;
+        li{
+          display: block;
+          width: fit-content;          
+        }
       }
     }
   }
@@ -77,6 +116,7 @@ body{
           height: 100%; 
           border-radius: 50%;
           border: 5px white solid;
+          transition: 2s;
         }  
       }
       .LetterContainer{
@@ -85,6 +125,7 @@ body{
         transform: translateY(-50%);
         text-align: center;
         height: 200px;
+        transition: 3s;
         h1{
           margin-top: 1rem;
         }
@@ -110,7 +151,6 @@ body{
           height: 100%;
           border-radius: 50%;
           background-color: transparent;
-
         }
       }
     }
@@ -130,6 +170,9 @@ body{
       }
       #contactMe{
         margin-top: 2rem;
+        h2{
+          display: inline-block;
+        }
       }
     }
   }
