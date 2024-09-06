@@ -1,3 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+.FilterBrightnessON {
+  filter: brightness(30%);
+}
+
+.LinkUnderLi {
+  text-decoration-line: underline;
+  text-decoration-thickness: 15px;
+}
+.LinkUnderLi :hover {
+  text-decoration-thickness: 1px;
+}
+
+.LinkUnderP {
+  border-bottom: 15px solid white;
+}
+
+.NoTextDec {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  height: 230px;
+  position: relative;
+}
+.title h2 {
+  margin-top: 100px;
+}
+.title .verticalLineTop {
+  position: absolute;
+  height: 100px;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  top: 0;
+  left: 50%;
+}
+.title .verticalLineBottom {
+  position: absolute;
+  height: 50px;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.342);
+  bottom: 0;
+  left: 50%;
+}
+
+.Courgette {
+  font-family: Courgette;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+ul {
+  font-size: 20px;
+  padding-top: 20px;
+}
+ul li {
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+body #HomeNav {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+}
+body #HomeNav .headerContainer {
+  padding-top: 2rem;
+}
+body #HomeNav .headerContainer .headerAboutMe {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: fixed;
+}
+body #HomeNav .headerContainer .NavContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
+  position: fixed;
+  transform: translateX(100%);
+}
+body #HomeNav .headerContainer .NavContainer .Navbar {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+body #HomeNav .headerContainer .NavContainer .Navbar .NavItems {
+  list-style: none;
+  font-size: 16px;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  overflow-x: hidden;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents {
+  display: flex;
+  max-width: 100%;
+  height: 25vh;
+  justify-content: center;
+  border: 3px solid #003180;
+  position: relative;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents img {
+  height: 100%;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: 3px 3px 3px #003180, -3px -3px 3px #003180, -3px 3px 3px #003180, 3px -3px 3px #003180, 3px 0px 3px #003180, -3px 0px 3px #003180, 0px 3px 3px #003180, 0px -3px 3px #003180;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body #ContactTitle .ContactText {
+  margin-bottom: 2rem;
+}
+body #ContactTitle .ContactText h1 {
+  text-align: center;
+}
+body #ContactForm .FormContainer {
+  width: 100%;
+  min-height: 30vh;
+  background-color: rgba(0, 0, 0, 0.137);
+  box-shadow: 5px 5px 5px rgba(0, 118, 182, 0.3411764706);
+}
+body #ContactForm .FormContainer .SendMessage {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 118, 182, 0.3411764706);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+body #ContactForm .FormContainer .SendMessage .MessagePara {
+  padding-bottom: 2rem;
+}
+body #ContactForm .FormContainer .SendMessage #Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+body #ContactForm .FormContainer .SendMessage #Form .inputBackground {
+  background-color: #00579f;
+  box-shadow: inset 5px 5px 5px rgba(0, 49, 128, 0.4039215686);
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+body #ContactForm .FormContainer .SendMessage #Form .BoxSize {
+  width: 90%;
+  border: none;
+  margin-bottom: 1rem;
+}
+body #ContactForm .FormContainer .SendMessage #Form .MessageBox {
+  width: 90%;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 1rem;
+}
+body #ContactForm .FormContainer .SendMessage #Form .submit {
+  width: 90%;
+  box-sizing: border-box;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+body #ContactForm .FormContainer .SendMessage #Form #name::placeholder, body #ContactForm .FormContainer .SendMessage #Form #email::placeholder, body #ContactForm .FormContainer .SendMessage #Form #subject::placeholder, body #ContactForm .FormContainer .SendMessage #Form #messagebox::placeholder {
+  color: rgba(255, 255, 255, 0.712);
+}
+body #Footer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body #Footer .FooterContainer .Links {
+  height: 30px;
+}
+body #Footer .FooterContainer .Links img {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+body #Footer .FooterContainer #contactMe {
+  margin-top: 2rem;
+}
 
 /*# sourceMappingURL=ContactMe.css.map */

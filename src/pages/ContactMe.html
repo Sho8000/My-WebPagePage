@@ -9,33 +9,99 @@
   <title>ContactMe</title>
 </head>
 <body>
+
   <section id="HomeNav">
     <div class="headerContainer">
-      <div><h2>Sho Yoshimura</h2></div>
-      <nav class="headerItems">
-        <ul class="NavItems">
-          <a href="pages/AboutMe.html" class="LinkUnderLi"><li>About Me</li></a>
-          <a href="pages/AboutMe.html#Skills" class="LinkUnderLi"><li>Skills</li></a>
-          <a href="pages/AboutMe.html#WorkExperience" class="LinkUnderLi"><li>WorkExperience</li></a>
-        </ul>
-      </nav>
+      <div class="headerAboutMe">
+        <a href="../index.html" class="NoTextDec"><h2 class="Courgette">Sho Yoshimura</h2></a>
+        <div class="hamburgerSVG">
+          <svg width="60" height="47">
+            <rect x="10" y="10" rx="1" ry="1" width="40" height="2"
+            style="fill:white;stroke:white;stroke-width:5;" />
+            <rect x="10" y="22" rx="1" ry="1" width="40" height="2"
+            style="fill:white;stroke:white;stroke-width:5;" />
+            <rect x="10" y="34" rx="1" ry="1" width="40" height="2"
+            style="fill:white;stroke:white;stroke-width:5;" />
+          </svg>  
+        </div>  
+      </div>
+      <div class="NavContainer">
+        <nav class="Navbar">
+          <div class="CloseSVG">
+            <svg width="50" height="50">
+              <line x1="10" y1="10" x2="40" y2="40" stroke="white" stroke-width="3px"/>
+              <line x1="10" y1="40" x2="40" y2="10" stroke="white" stroke-width="3px" />
+            </svg>  
+          </div>  
+          <ul class="NavItems">
+            <a href="#" class="LinkUnderLi"><li>About Me</li></a>
+            <a href="#Skills" class="LinkUnderLi"><li>Skills</li></a>
+            <a href="#WorkExperience" class="LinkUnderLi"><li>WorkExperience</li></a>
+            <a href="../pages/ContactMe.html" class="LinkUnderLi"><li>ContactMe</li></a>
+          </ul>
+        </nav>  
+        <div class="NavProjectArea">
+          <div class="contents">
+            <img src="../resource/MyProjectPokemon.png" alt="Pokemon&Valorant">
+            <h3>My Project</h3>
+          </div>
+          <div class="contents">
+            <img src="../resource/MyProjectCB.png" alt="Coming Soon">            
+            <h3>My Project</h3>
+          </div>
+          <div class="contents">
+            <img src="../resource/commingSoon.png" alt="Coming Soon" style="width: 100%;">
+            <h3></h3>
+          </div>
+          <div class="contents">
+            <img src="../resource/commingSoon.png" alt="Coming Soon" style="width: 100%;">            
+            <h3></h3>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="MainPart">
-    <div class="MainContainer">
-      <div class="ImgContainer">
-        <img src="resource/TeachingSqare.png" alt="My Picture" class="FilterBrightnessON">
-      </div>
-      <div class="LetterContainer">
-        <h1>Web Developer</h1>
-        <p class="LinkUnderP">Projects</p>
-      </div>
-      <div class="LinkContainer">
-        <a href="pages/AboutMe.html#Projects"><div class="ForLink"></div></a>
-      </div>
+
+  <section id="ContactTitle">
+    <div class="ContactText">
+      <h1 class="Courgette">Hit me up for</h1>
+      <h1 class="Courgette">Future Project</h1>  
     </div>
   </section>
-  <section id="ContactMe">
+
+  <section id="ContactForm">
+    <div class="FormContainer">
+      <div class="SendMessage">
+        <form id="Form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="dd6fd7ee-f4f8-4a07-9937-2416e8ea3f6c">
+          <input type="hidden" name="subject" value="Trying out ContactFORMS">
+          <input type="checkbox" name="botcheck" id="" style="display: none;">
+          <p class="Courgette MessagePara">Send a Message</p>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Full Name" class="BoxSize inputBackground" required>
+          <label for="name"></label>
+          <input type="email" id="email" name="email" placeholder="Email Address" class="BoxSize inputBackground" required>
+          <label for="subject"></label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" class="BoxSize inputBackground" required>
+          <label for="messagePC"></label>
+          <label for="messagePhone"></label>
+          <textarea type="message" id="messagebox" name="messagePhone" placeholder="Message..." class="MessageBox inputBackground" rows="10"></textarea>
+          <button type="submit" class="submit LinkUnderLi">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Footer">
+    <div class="FooterContainer">
+      <div class="Links">
+        <a href="https://www.instagram.com/yoshi_kun_8000?igsh=MWMxOXhiaW1kdzZjdQ=="><img src="../resource/instagramLogo.png" alt="instagram"></a>
+        <a href="https://www.linkedin.com/in/sho-yoshimura-885001261/"><img src="../resource/LinkedIn.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Sho8000"><img src="../resource/github.png" alt="Github"></a>
+        <a href="mailto:yoshikichi8000@gmail.com"><img src="../resource/Email.png" alt="Email"></a>
+      </div>
+    </div>
   </section>
   <script src="scripts/home.js"></script>
 </body>
