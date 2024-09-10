@@ -13,6 +13,7 @@ html{
 .FilterBrightnessON{
   filter: brightness(30%);
 }
+
 .LinkUnderLi{
   text-decoration-line: underline;
   text-decoration-thickness: 15px;
@@ -163,21 +164,32 @@ body{
       }
       .LetterContainer{
         position: absolute;
-        padding-top: 2rem;
-        width: 100%;
-        text-align: center;
-        height: 200px;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        transform: translatex(-50%);
         h1{
           margin-top: 3rem;
+          color: white;
+          text-shadow: 
+          3px 3px 3px black, -3px -3px 3px black,
+          -3px 3px 3px black,  3px -3px 3px black,
+           3px 0px 3px black, -3px -0px 3px black,
+           0px 3px 3px black,  0px -3px 3px black;            
         }
-        p{
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          margin-bottom: -1rem;
-          font-size: 24px;
-          font-weight: 800;
+      }
+      .transparentContainer{
+        position: absolute;
+        margin-top: 2rem;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        transform: translatex(-50%);
+        .transparentBox{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background-color: transparent;
         }
       }
       .textArea{

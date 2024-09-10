@@ -6,8 +6,13 @@
 }
 
 .FilterBrightnessON {
-  transition: 2s;
+  transition: filter 2s;
   filter: brightness(30%);
+}
+
+.FilterBrightnessOFF {
+  transition: filter 2s;
+  filter: brightness(100%) !important;
 }
 
 .LinkUnderLi {
@@ -52,12 +57,34 @@
   height: 1px;
 }
 
-.LinkUnderP {
-  border-bottom: 15px solid white;
+.LinkUnderP::after {
+  background-color: white;
+  bottom: -8px;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  transition: all 0.5s;
+  width: 100%;
 }
 
+.LinkUnderP.active::after {
+  bottom: 6px;
+  opacity: 1;
+  height: 1px;
+}
+
+/* .LinkUnderP{
+  border-bottom: 15px solid white;
+}
+ */
 .HoverLinkPH:hover {
   border-bottom: 1px solid white;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 .Courgette {
@@ -78,6 +105,10 @@ ul {
 }
 ul li {
   padding-bottom: 20px;
+}
+
+button {
+  font-size: 20px;
 }
 
 p {
@@ -126,7 +157,7 @@ body #MainPart .MainContainer .ImgContainer img {
   height: 100%;
   border-radius: 50%;
   border: 5px white solid;
-  transition: 2s;
+  transition: filter 2s;
 }
 body #MainPart .MainContainer .LetterContainer {
   position: absolute;
@@ -134,7 +165,7 @@ body #MainPart .MainContainer .LetterContainer {
   transform: translateY(-50%);
   text-align: center;
   height: 200px;
-  transition: 3s;
+  transition: filter 3s;
 }
 body #MainPart .MainContainer .LetterContainer h1 {
   margin-top: 1rem;
