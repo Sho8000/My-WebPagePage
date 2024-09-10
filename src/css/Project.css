@@ -14,11 +14,13 @@ html {
 }
 
 .LinkUnderLi {
-  text-decoration-line: underline;
-  text-decoration-thickness: 15px;
+  border-bottom: 15px solid white;
+  transition: border-bottom 0.5s;
 }
-.LinkUnderLi :hover {
-  text-decoration-thickness: 1px;
+
+.LinkUnderLi:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom 0.5s;
 }
 
 .LinkUnderP {
@@ -56,6 +58,12 @@ html {
 
 .Righthide {
   transform: translateX(100%);
+  transition: transform 0.5s;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 .Courgette {
@@ -115,6 +123,7 @@ body #HomeNav .headerContainer .NavContainer {
   top: 0;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   position: fixed;
+  transition: transform 0.5s;
 }
 body #HomeNav .headerContainer .NavContainer .Navbar {
   padding-top: 3rem;
@@ -124,10 +133,14 @@ body #HomeNav .headerContainer .NavContainer .Navbar .NavItems {
   list-style: none;
   font-size: 16px;
 }
+body #HomeNav .headerContainer .NavContainer .Navbar .NavItems li {
+  display: block;
+  width: fit-content;
+  font-size: 16px;
+}
 body #HomeNav .headerContainer .NavContainer .NavProjectArea {
   display: flex;
   flex-direction: column;
-  background-color: black;
   overflow-x: hidden;
 }
 body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents {

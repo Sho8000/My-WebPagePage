@@ -1,11 +1,40 @@
 $(() => {
 
-  //Nav hamburger/close button
+  var isAnimationComplete=false;
+
+  var tlNavFade = gsap.timeline();
+
   $(".hamburgerSVG").on("click",()=>{
-    $(".NavContainer").removeClass("Righthide")
+    $(".NavContainer").removeClass("Righthide");
+    setTimeout(() => {
+      if(!isAnimationComplete){
+        tlNavFade.from(".Fade",{
+          scaleY: 0,
+          stagger: 0.2,
+          duration: 0.5,  
+          onComplete: ()=>{
+            isAnimationComplete=true;
+            console.log('isAnimationPlaying:', isAnimationPlaying)
+          }
+        })
+      }else{
+        tlNavFade.play()
+      }        
+    }, 500);
   })
   $(".CloseSVG").on("click",()=>{
-    $(".NavContainer").addClass("Righthide")
+    if(isAnimationComplete){
+      tlNavFade.reverse().then(()=>{
+        $(".NavContainer").addClass("Righthide");
+      })  
+    }
+  })
+
+  //Go to Other Link
+  $(".MoveToOtherPages").on("click",function(){
+    tlNavFade.reverse().then(()=>{
+      window.location.href = `${$(this).val()}`;
+    });
   })
   
   const swiper = new Swiper('.swiper', {
