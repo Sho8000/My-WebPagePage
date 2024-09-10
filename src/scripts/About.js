@@ -26,7 +26,6 @@ $(() => {
           duration: 0.5,  
           onComplete: ()=>{
             isAnimationComplete=true;
-            console.log('isAnimationPlaying:', isAnimationPlaying)
           }
         })
       }else{
@@ -44,7 +43,7 @@ $(() => {
 
   //Go to Other Link
   $(".MoveToOtherPages").on("click",function(){
-    if($(this).val()=="../pages/ContactMe.html"){
+    if($(this).val()=="../pages/ContactMe.html" || $(this).val()== "../pages/Project.html"){
       tlNavFade.reverse().then(()=>{
         window.location.href = `${$(this).val()}`;
       });
