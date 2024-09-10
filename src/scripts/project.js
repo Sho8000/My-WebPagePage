@@ -1,5 +1,13 @@
 $(() => {
 
+  //Nav hamburger/close button
+  $(".hamburgerSVG").on("click",()=>{
+    $(".NavContainer").removeClass("Righthide")
+  })
+  $(".CloseSVG").on("click",()=>{
+    $(".NavContainer").addClass("Righthide")
+  })
+  
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     effect: "cube",

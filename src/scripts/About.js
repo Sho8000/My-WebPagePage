@@ -12,6 +12,14 @@ $(() => {
     duration: 0.8,
   })
 
+  //Nav hamburger/close button
+  $(".hamburgerSVG").on("click",()=>{
+    $(".NavContainer").removeClass("Righthide")
+  })
+  $(".CloseSVG").on("click",()=>{
+    $(".NavContainer").addClass("Righthide")
+  })
+  
   $(".transparentContainer").on( "mouseenter", ()=>{
     $("#MainPicture").toggleClass("FilterBrightnessON")
     $(".LetterContainer").toggleClass("FilterBrightnessON")

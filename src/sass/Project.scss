@@ -50,6 +50,9 @@ html{
     left: 50%;
   }
 }
+.Righthide{
+  transform: translateX(100%);
+}
 
 //font
 .Courgette{
@@ -103,7 +106,6 @@ body{
         top: 0;
         background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
         position: fixed;
-        transform: translateX(100%);
         .Navbar{
           padding-top: 3rem;
           padding-left: 1rem;
