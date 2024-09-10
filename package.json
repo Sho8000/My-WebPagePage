@@ -16,5 +16,8 @@
     "concurrently": "^8.2.2",
     "live-server": "^1.2.2",
     "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "swiper": "^11.1.12"
   }
 }

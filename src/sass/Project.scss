@@ -80,4 +80,128 @@ body{
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  #HomeNav{ 
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    .headerContainer{
+      padding-top: 2rem;
+      .headerAboutMe{
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        position: fixed;
+      }
+      .NavContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
+        position: fixed;
+        transform: translateX(100%);
+        .Navbar{
+          padding-top: 3rem;
+          padding-left: 1rem;
+          .NavItems{
+            list-style: none;
+            font-size: 16px;
+          }
+        }
+        .NavProjectArea{
+          display: flex;
+          flex-direction: column;
+          background-color: black;
+          overflow-x: hidden;
+          .contents{
+            display: flex;
+            max-width: 100%;
+            height: 25vh;
+            justify-content: center;
+            border: 3px solid #003180;
+            position: relative;
+            img{
+                height: 100%;
+            }  
+            h3{
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              text-shadow:
+              3px 3px 3px #003180, -3px -3px 3px #003180,
+             -3px 3px 3px #003180,  3px -3px 3px #003180,
+              3px 0px 3px #003180, -3px -0px 3px #003180,
+              0px 3px 3px #003180,  0px -3px 3px #003180;            
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swiper {
+    width: 90%;
+    height: 60vh;
+    .swiper-wrapper{
+      .swiper-slide{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 10px;
+        h2{
+          margin-top: 1rem;
+          color: white;
+          text-shadow: 
+          3px 3px 3px black, -3px -3px 3px black,
+          -3px 3px 3px black,  3px -3px 3px black,
+           3px 0px 3px black, -3px -0px 3px black,
+           0px 3px 3px black,  0px -3px 3px black;            
+        }
+      }
+      #slide1{
+        background-image: url(../resource/PokeValoImgPhone.png);
+        background-size: cover;  
+        background-position: center;
+      }
+      #slide2{
+        background-image: url(../resource/CBImgPhone.png);
+        background-size: cover;  
+        background-position: center;
+      }
+  }
+    .swiper-button-prev, .swiper-button-next{
+      color: white;
+      text-shadow: 
+      3px 3px 3px black, -3px -3px 3px black,
+      -3px 3px 3px black,  3px -3px 3px black,
+       3px 0px 3px black, -3px -0px 3px black,
+       0px 3px 3px black,  0px -3px 3px black;            
+    }
+  }
+
+  #Footer{
+    min-height: 25vh;
+    text-align: center;
+    place-content: center;
+    .FooterContainer{
+      .Links{
+        height: 30px;
+        img{
+          height: 100%;
+          border: 1px solid white;
+          border-radius: 5px;
+        }
+      }
+      #contactMe{
+        margin-top: 2rem;
+      }
+    }
+  }
+
 }

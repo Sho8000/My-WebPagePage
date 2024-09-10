@@ -86,5 +86,110 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+body #HomeNav {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+}
+body #HomeNav .headerContainer {
+  padding-top: 2rem;
+}
+body #HomeNav .headerContainer .headerAboutMe {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: fixed;
+}
+body #HomeNav .headerContainer .NavContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
+  position: fixed;
+  transform: translateX(100%);
+}
+body #HomeNav .headerContainer .NavContainer .Navbar {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+body #HomeNav .headerContainer .NavContainer .Navbar .NavItems {
+  list-style: none;
+  font-size: 16px;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  overflow-x: hidden;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents {
+  display: flex;
+  max-width: 100%;
+  height: 25vh;
+  justify-content: center;
+  border: 3px solid #003180;
+  position: relative;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents img {
+  height: 100%;
+}
+body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: 3px 3px 3px #003180, -3px -3px 3px #003180, -3px 3px 3px #003180, 3px -3px 3px #003180, 3px 0px 3px #003180, -3px 0px 3px #003180, 0px 3px 3px #003180, 0px -3px 3px #003180;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .swiper {
+  width: 90%;
+  height: 60vh;
+}
+body .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+body .swiper .swiper-wrapper .swiper-slide h2 {
+  margin-top: 1rem;
+  color: white;
+  text-shadow: 3px 3px 3px black, -3px -3px 3px black, -3px 3px 3px black, 3px -3px 3px black, 3px 0px 3px black, -3px 0px 3px black, 0px 3px 3px black, 0px -3px 3px black;
+}
+body .swiper .swiper-wrapper #slide1 {
+  background-image: url(../resource/PokeValoImgPhone.png);
+  background-size: cover;
+  background-position: center;
+}
+body .swiper .swiper-wrapper #slide2 {
+  background-image: url(../resource/CBImgPhone.png);
+  background-size: cover;
+  background-position: center;
+}
+body .swiper .swiper-button-prev, body .swiper .swiper-button-next {
+  color: white;
+  text-shadow: 3px 3px 3px black, -3px -3px 3px black, -3px 3px 3px black, 3px -3px 3px black, 3px 0px 3px black, -3px 0px 3px black, 0px 3px 3px black, 0px -3px 3px black;
+}
+body #Footer {
+  min-height: 25vh;
+  text-align: center;
+  place-content: center;
+}
+body #Footer .FooterContainer .Links {
+  height: 30px;
+}
+body #Footer .FooterContainer .Links img {
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+body #Footer .FooterContainer #contactMe {
+  margin-top: 2rem;
+}
 
 /*# sourceMappingURL=Project.css.map */
