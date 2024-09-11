@@ -2,9 +2,25 @@ $(() => {
 
   var isAnimationComplete=false;
 
+  var tlFirstFade = gsap.timeline();
   var tlNavFade = gsap.timeline();
   var tlToSize0 = gsap.timeline();
 
+    //FirstAnimation
+    tlFirstFade.to(".FirstFade",{
+      scaleY: 0,
+      stagger: 0,
+      duration:0.1,
+    }).then(()=>{
+      $(".FirstFade").removeClass("FirstOpacity")
+      }).then(()=>{
+        tlFirstFade.to(".FirstFade",{
+        scaleY: 1,
+        stagger: 0.2,
+        duration: 0.5,  
+      })
+    })
+  
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
     if(!isAnimationComplete){

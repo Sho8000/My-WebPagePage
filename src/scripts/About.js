@@ -3,17 +3,37 @@ $(() => {
   var isAnimationComplete=false;
 
   var tlFirstFade = gsap.timeline();
+  var tlFirstFadeMain = gsap.timeline();
   var tlNavFade = gsap.timeline();
   var tlToSize0 = gsap.timeline();
 
-  tlFirstFade.from(".Fade1Gsap", {
+  tlFirstFadeMain.to(".FirstFadeMain", {
     scale: 0,
-    stagger: 0.2,
-    duration: 0.8,
-  }).from(".Fade2Gsap",{
-    scale: 0,
-    stagger: 0.2,
-    duration: 0.8,
+    stagger: 0,
+    duration: 0.1,
+  }).then(()=>{
+    $(".FirstFadeMain").removeClass("FirstOpacity")
+  }).then(()=>{
+    tlFirstFadeMain.to(".FirstFadeMain",{
+    scale: 1,
+    stagger: 0.7,
+    duration: 0.7,
+    onComplete:()=>{
+      tlFirstFade.to(".FirstFade",{
+        scaleY: 0,
+        stagger: 0,
+        duration: 0.1,  
+      }).then(()=>{
+        $(".FirstFade").removeClass("FirstOpacity")
+      }).then(()=>{
+        tlFirstFade.to(".FirstFade",{
+          scaleY: 1,
+          stagger: 0.2,
+          duration: 0.5,  
+        })
+      })
+    }
+    })
   })
 
   //Nav hamburger/close button

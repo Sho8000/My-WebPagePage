@@ -19,12 +19,27 @@ $(() => {
   var tlFade = gsap.timeline();
   var tlExpansion = gsap.timeline();
 
-  tlFade.from(".Fade", {
+  //FirstAnimation
+  tlFade.to(".Fade",{
+    scaleY: 0,
+    stagger: 0,
+    duration:0.1,
+  }).then(()=>{
+    $(".Fade").removeClass("opacity")
+    }).then(()=>{
+      tlFade.to(".Fade",{
+      scaleY: 1,
+      stagger: 0.2,
+      duration: 0.5,  
+    })
+  })
+  
+/*   tlFade.from(".Fade", {
     scaleY: 0,
     stagger: 0.2,
     duration: 0.5,
   });
-
+ */
   $(".MoveToOtherPages").on("click",function(){
     tlFade.reverse().then(()=>{
       if($(this).val()!=="pages/Project.html"){

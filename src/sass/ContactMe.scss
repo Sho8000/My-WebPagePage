@@ -36,6 +36,12 @@ html{
   opacity: 1;
   height: 1px;
 }
+.FirstOpacity{
+  opacity: 0;
+}
+.opacity{
+  opacity: 0;
+}
 
 
 .LinkUnderLi{
@@ -85,9 +91,6 @@ html{
 button{
   background-color: transparent;
   border: none;
-}
-.opacity{
-  opacity: 0;
 }
 
 //font

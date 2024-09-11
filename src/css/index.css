@@ -87,6 +87,10 @@ button {
   border: none;
 }
 
+.opacity {
+  opacity: 0;
+}
+
 .Courgette {
   font-family: Courgette;
 }

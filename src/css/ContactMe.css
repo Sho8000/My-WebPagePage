@@ -40,6 +40,14 @@ html {
   height: 1px;
 }
 
+.FirstOpacity {
+  opacity: 0;
+}
+
+.opacity {
+  opacity: 0;
+}
+
 .LinkUnderLi {
   border-bottom: 15px solid white;
   transition: border-bottom 0.5s;
@@ -91,10 +99,6 @@ html {
 button {
   background-color: transparent;
   border: none;
-}
-
-.opacity {
-  opacity: 0;
 }
 
 .Courgette {
