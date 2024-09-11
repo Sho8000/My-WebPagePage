@@ -29,6 +29,16 @@ html {
   transition: border-bottom 0.5s;
 }
 
+.LinkUnderH {
+  border-bottom: 15px solid white;
+  transition: border-bottom 0.5s;
+}
+
+.LinkUnderH:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom 0.5s;
+}
+
 .NoTextDec {
   text-decoration: none;
 }

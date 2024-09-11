@@ -19,19 +19,19 @@ $(() => {
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
     if(!isAnimationComplete){
-      tlToSize0.to(".Fade",{
+      tlToSize0.to(".NavFade",{
         scaleY: 0,
         stagger: 0,
         duration:0.5,
       }).then(()=>{
         tlToSize0.pause();
-        $(".Fade").removeClass("opacity")
+        $(".NavFade").removeClass("opacity")
       })
     }
     $(".NavContainer").removeClass("Righthide");
     setTimeout(() => {
       if(!isAnimationComplete){
-        tlNavFade.to(".Fade",{
+        tlNavFade.to(".NavFade",{
           scaleY: 1,
           stagger: 0.2,
           duration: 0.5,  

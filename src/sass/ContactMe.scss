@@ -18,6 +18,25 @@ html{
   transition: filter 2s;
   filter: brightness(100%) !important;
 }
+.LinkUnderH{
+  text-decoration-line: none;
+}
+.LinkUnderH::after{
+  background-color: white; 
+  bottom: -8px; 
+  content: ""; 
+  height: 10px;
+  left: 0; 
+  position: absolute; 
+  transition: all .5s;
+  width: 100%;
+}
+.LinkUnderH:hover::after {
+  bottom: 6px;
+  opacity: 1;
+  height: 1px;
+}
+
 
 .LinkUnderLi{
   border-bottom: 15px solid white;
