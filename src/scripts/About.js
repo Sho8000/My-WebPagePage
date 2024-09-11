@@ -7,7 +7,9 @@ $(() => {
   var tlFirstFadeMain = gsap.timeline();
   var tlNavFade = gsap.timeline();
   var tlToSize0 = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger);
 
+  //First Animation
   tlFirstProcess.to(".FirstFadeMain", {
     scale: 0,
     stagger: 0,
@@ -44,26 +46,41 @@ $(() => {
     }
     })
   })
-  
-/* 
-  //FirstAnimation
-  tlFadeFirst.to(".Fade",{
-    scaleY: 0,
-    stagger: 0,
-    duration:0.1,
-  }).then(()=>{
-    $(".Fade").removeClass("opacity")
-    }).then(()=>{
-      tlFade.from(".Fade",{
-      scaleY: 0,
-    }).to(".Fade",{
-      scaleY: 1,
-      stagger: 0.2,
-      duration: 0.5,  
-    })
-  })
- */
 
+  //Scroll Animation
+  $(function(){
+    gsap.utils.toArray(".ScrollIn").forEach(target => {
+      gsap.fromTo(target,
+        {
+          scrollTrigger: {
+            trigger: target,
+            start: "top bottom",
+          },
+        scale:0,
+        },
+        {
+          scrollTrigger: {
+            trigger: target,
+            start: "top bottom",
+          },
+          scale:1,
+        });
+    });
+  });
+
+/*   gsap.fromTo(
+    ".ScrollIn",
+    {
+      duration:1
+    },
+    {
+      scale:1,
+      scrollTrigger: {
+        trigger: ".ScrollIn",
+      }
+    }
+  )
+ */
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
     if(!isAnimationComplete){
