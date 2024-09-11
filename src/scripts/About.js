@@ -2,30 +2,39 @@ $(() => {
 
   var isAnimationComplete=false;
 
+  var tlFirstProcess = gsap.timeline();
   var tlFirstFade = gsap.timeline();
   var tlFirstFadeMain = gsap.timeline();
   var tlNavFade = gsap.timeline();
   var tlToSize0 = gsap.timeline();
 
-  tlFirstFadeMain.to(".FirstFadeMain", {
+  tlFirstProcess.to(".FirstFadeMain", {
     scale: 0,
     stagger: 0,
     duration: 0.1,
   }).then(()=>{
     $(".FirstFadeMain").removeClass("FirstOpacity")
   }).then(()=>{
+    tlFirstFadeMain.from(".FirstFadeMain",{
+      scale: 0,
+      duration: 0,  
+    })
     tlFirstFadeMain.to(".FirstFadeMain",{
     scale: 1,
     stagger: 0.7,
     duration: 0.7,
     onComplete:()=>{
-      tlFirstFade.to(".FirstFade",{
+      tlFirstProcess.to(".FirstFade",{
         scaleY: 0,
         stagger: 0,
         duration: 0.1,  
       }).then(()=>{
         $(".FirstFade").removeClass("FirstOpacity")
       }).then(()=>{
+        tlFirstFade.from(".FirstFade",{
+          scaleY: 0,
+          duration: 0,  
+        })        
         tlFirstFade.to(".FirstFade",{
           scaleY: 1,
           stagger: 0.2,
@@ -35,6 +44,25 @@ $(() => {
     }
     })
   })
+  
+/* 
+  //FirstAnimation
+  tlFadeFirst.to(".Fade",{
+    scaleY: 0,
+    stagger: 0,
+    duration:0.1,
+  }).then(()=>{
+    $(".Fade").removeClass("opacity")
+    }).then(()=>{
+      tlFade.from(".Fade",{
+      scaleY: 0,
+    }).to(".Fade",{
+      scaleY: 1,
+      stagger: 0.2,
+      duration: 0.5,  
+    })
+  })
+ */
 
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
@@ -75,7 +103,7 @@ $(() => {
   //Go to Other Link
   $(".MoveToOtherPages").on("click",function(){
     if($(this).val()=="../pages/ContactMe.html" || $(this).val()== "../pages/Project.html"){
-      tlNavFade.reverse().then(()=>{
+      tlFirstFade.reverse().then(()=>{
         window.location.href = `${$(this).val()}`;
       });
     }else{
