@@ -37,24 +37,13 @@
 }
 
 .LinkUnderH {
-  text-decoration-line: none;
+  border-bottom: 15px solid white;
+  transition: border-bottom 0.5s;
 }
 
-.LinkUnderH::after {
-  background-color: white;
-  bottom: -8px;
-  content: "";
-  height: 10px;
-  left: 0;
-  position: absolute;
-  transition: all 0.5s;
-  width: 100%;
-}
-
-.LinkUnderH:hover::after {
-  bottom: 6px;
-  opacity: 1;
-  height: 1px;
+.LinkUnderH:hover {
+  border-bottom: 1px solid white;
+  transition: border-bottom 0.5s;
 }
 
 .LinkUnderP::after {
