@@ -68,19 +68,6 @@ $(() => {
     });
   });
 
-/*   gsap.fromTo(
-    ".ScrollIn",
-    {
-      duration:1
-    },
-    {
-      scale:1,
-      scrollTrigger: {
-        trigger: ".ScrollIn",
-      }
-    }
-  )
- */
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
     if(!isAnimationComplete){
