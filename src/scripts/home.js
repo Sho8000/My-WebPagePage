@@ -36,7 +36,7 @@ $(() => {
           ease: "power4.out",
           duration:1.5,
           onUpdate:()=>{
-            console.log('here')
+//            console.log('here')
           },
           onComplete: ()=>{
             setTimeout(()=>{

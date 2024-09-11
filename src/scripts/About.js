@@ -4,6 +4,7 @@ $(() => {
 
   var tlFirstFade = gsap.timeline();
   var tlNavFade = gsap.timeline();
+  var tlToSize0 = gsap.timeline();
 
   tlFirstFade.from(".Fade1Gsap", {
     scale: 0,
@@ -17,11 +18,21 @@ $(() => {
 
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
+    if(!isAnimationComplete){
+      tlToSize0.to(".Fade",{
+        scaleY: 0,
+        stagger: 0,
+        duration:0.5,
+      }).then(()=>{
+        tlToSize0.pause();
+        $(".Fade").removeClass("opacity")
+      })
+    }
     $(".NavContainer").removeClass("Righthide");
     setTimeout(() => {
       if(!isAnimationComplete){
-        tlNavFade.from(".Fade",{
-          scaleY: 0,
+        tlNavFade.to(".Fade",{
+          scaleY: 1,
           stagger: 0.2,
           duration: 0.5,  
           onComplete: ()=>{
@@ -75,6 +86,13 @@ $(() => {
     console.log("hello")
     tlFirstFade.reverse()
 //    window.location.href = `../pages/ContactMe.html`;
+  })
+
+  //Link Logo Brightness
+  $(".LinkLogo").on("mouseenter", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  }).on( "mouseleave", function(){
+    $(this).toggleClass("FilterBrightnessON")
   })
 
 });

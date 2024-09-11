@@ -11,7 +11,12 @@ html{
 }
 
 .FilterBrightnessON{
+  transition: filter 2s;
   filter: brightness(30%);
+}
+.FilterBrightnessOFF{
+  transition: filter 2s;
+  filter: brightness(100%) !important;
 }
 
 .LinkUnderLi{
@@ -61,6 +66,9 @@ html{
 button{
   background-color: transparent;
   border: none;
+}
+.opacity{
+  opacity: 0;
 }
 
 //font
@@ -162,6 +170,7 @@ body{
       }
     }
   }
+
 
   #ContactTitle{
     .ContactText{
