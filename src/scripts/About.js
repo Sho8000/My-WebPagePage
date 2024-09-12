@@ -107,9 +107,9 @@ $(() => {
   //Go to Other Link
   $(".MoveToOtherPages").on("click",function(){
     if($(this).val()=="../pages/ContactMe.html" || $(this).val()== "../pages/Project.html"){
-      tlFirstFade.reverse().then(()=>{
+      tlNavFade.reverse().then(()=>{
         window.location.href = `${$(this).val()}`;
-      });
+      });  
     }else{
       if(isAnimationComplete){
         tlNavFade.reverse().then(()=>{
@@ -121,8 +121,13 @@ $(() => {
         })
       }  
     }
-
   })
+  $(".MoveToOtherPages2").on("click",function(){
+    tlFirstFade.reverse().then(()=>{
+      window.location.href = `${$(this).val()}`;
+    });  
+  })
+
   
   //Main Picture Animation
   $(".transparentContainer").on( "mouseenter", ()=>{
@@ -133,18 +138,17 @@ $(() => {
     $(".LetterContainer").toggleClass("FilterBrightnessON")
   });
 
-
-  $(".textArea").on("click",function(){
-    console.log("hello")
-    tlFirstFade.reverse()
-//    window.location.href = `../pages/ContactMe.html`;
-  })
-
   //Link Logo Brightness
+  $(".NavLinkPic").on("mouseenter", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  }).on( "mouseleave", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  })
   $(".LinkLogo").on("mouseenter", function(){
     $(this).toggleClass("FilterBrightnessON")
   }).on( "mouseleave", function(){
     $(this).toggleClass("FilterBrightnessON")
   })
+
 
 });

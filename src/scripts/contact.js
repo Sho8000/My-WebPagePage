@@ -65,6 +65,11 @@ $(() => {
   })
   
     //Link Logo Brightness
+    $(".NavLinkPic").on("mouseenter", function(){
+      $(this).toggleClass("FilterBrightnessON")
+    }).on( "mouseleave", function(){
+      $(this).toggleClass("FilterBrightnessON")
+    })  
     $(".LinkLogo").on("mouseenter", function(){
       $(this).toggleClass("FilterBrightnessON")
     }).on( "mouseleave", function(){
