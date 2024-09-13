@@ -138,6 +138,16 @@ body {
   body #MainPart .MainContainer .LetterContainer {
     height: 300px !important;
   }
+  body #Footer .FooterContainer .Links {
+    height: 40px !important;
+  }
+  body #Footer .FooterContainer .Links img {
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+  body #Footer .FooterContainer #contactMe {
+    margin-top: 1rem !important;
+  }
 }
 @media only screen and (min-width: 769px) and (min-height: 802px) {
   body h1 {
@@ -159,6 +169,16 @@ body {
   }
   body #MainPart .MainContainer .LetterContainer {
     height: 350px !important;
+  }
+  body #Footer .FooterContainer .Links {
+    height: 40px !important;
+  }
+  body #Footer .FooterContainer .Links img {
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+  body #Footer .FooterContainer #contactMe {
+    margin-top: 1rem !important;
   }
 }
 body #HomeNav {

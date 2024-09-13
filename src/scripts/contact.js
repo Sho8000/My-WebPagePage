@@ -2,24 +2,30 @@ $(() => {
 
   var isAnimationComplete=false;
 
+  var tlFirstProcess = gsap.timeline();
   var tlFirstFade = gsap.timeline();
   var tlNavFade = gsap.timeline();
   var tlToSize0 = gsap.timeline();
 
   //FirstAnimation
-  tlFirstFade.to(".FirstFade",{
+  tlFirstProcess.to(".FirstFade",{
     scaleY: 0,
     stagger: 0,
     duration:0.1,
   }).then(()=>{
     $(".FirstFade").removeClass("FirstOpacity")
-    }).then(()=>{
-      tlFirstFade.to(".FirstFade",{
+  }).then(()=>{
+    tlFirstFade.from(".FirstFade",{
+      scaleY: 0,
+      stagger: 0,
+      duration:0.1,
+    }).to(".FirstFade",{
       scaleY: 1,
       stagger: 0.2,
       duration: 0.5,  
     })
   })
+  
 
   //Nav hamburger/close button
   $(".hamburgerSVG").on("click",()=>{
@@ -63,17 +69,23 @@ $(() => {
       window.location.href = `${$(this).val()}`;
     });
   })
+  $(".MoveToOtherPages2").on("click",function(){
+    tlFirstFade.reverse().then(()=>{
+      window.location.href = `${$(this).val()}`;
+    });
+  })
   
-    //Link Logo Brightness
-    $(".NavLinkPic").on("mouseenter", function(){
-      $(this).toggleClass("FilterBrightnessON")
-    }).on( "mouseleave", function(){
-      $(this).toggleClass("FilterBrightnessON")
-    })  
-    $(".LinkLogo").on("mouseenter", function(){
-      $(this).toggleClass("FilterBrightnessON")
-    }).on( "mouseleave", function(){
-      $(this).toggleClass("FilterBrightnessON")
-    })
+  //Link Logo Brightness
+  $(".NavLinkPic").on("mouseenter", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  }).on( "mouseleave", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  })  
+  $(".LinkLogo").on("mouseenter", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  }).on( "mouseleave", function(){
+    $(this).toggleClass("FilterBrightnessON")
+  })
+
   
 })
