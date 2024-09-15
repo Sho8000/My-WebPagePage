@@ -18,6 +18,18 @@ html{
   transition: filter 2s;
   filter: brightness(100%) !important;
 }
+.LinkUnderLi{
+  border-bottom: 15px solid white;
+  transition: border-bottom 0.5s;
+}
+.LinkUnderLi:hover{
+  border-bottom: 1px solid white;
+  transition: border-bottom 0.5s;
+}
+.LinkUnderP{
+  vertical-align: bottom;
+}
+
 .LinkUnderH{
   text-decoration-line: none;
 }
@@ -42,18 +54,6 @@ html{
 .opacity{
   opacity: 0;
 }
-
-
-.LinkUnderLi{
-  border-bottom: 15px solid white;
-  //  text-decoration-thickness: 15px;
-  transition: border-bottom 0.5s;
-}
-.LinkUnderLi:hover{
-  border-bottom: 1px solid white;
-  transition: border-bottom 0.5s;
-}
-
 .LinkUnderP{
   border-bottom: 15px solid white;
 }
@@ -92,6 +92,15 @@ button{
   background-color: transparent;
   border: none;
 }
+.OnlyLandscape{
+  display: none !important;
+}
+.DispLandOn{
+  display: none;
+}
+.driverOff{
+  display: none;
+}
 
 //font
 .Courgette{
@@ -117,6 +126,356 @@ p{
 }
 
 body{
+  @media only screen and (max-height:801px){
+    h1{
+      font-size: 32px;
+    }
+    #HomeNav{ 
+      height: 80px !important;
+      .headerContainer{
+        padding-top: 1rem !important;
+      }
+    }  
+    #ContactTitle{
+      .ContactText{
+        margin-bottom: 1rem !important;
+      }
+    }  
+
+    #ContactForm{
+      .FormContainer{        
+        .SendMessage{
+          padding: 0.5rem 0 !important;
+          .MessagePara{
+            padding-bottom: 1rem !important;
+          }
+          #Form{
+            .MessageBox{
+              margin-bottom: 0rem !important;
+            }
+            .btnContainer{
+              height: 50px !important;
+           }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (orientation: landscape) and (max-height:700px){
+    h1{
+      font-size: 48px;
+    }
+    p{
+      font-size: 20px !important;
+      font-weight: 400;
+      margin-top: 2rem;
+    }
+
+    .OnlyLandscape{
+      display: block !important;
+    }
+    .DispLandOff{
+      display: none !important;
+    }
+    .DispLandOn{
+      display: block !important;
+    }
+    
+    #HomeNav{ 
+      .headerContainer{
+        .hamburgerSVG{
+          display: none;
+        }
+        .NavItemsLandscape{
+          list-style: none;
+          font-size: 16px;
+          display: flex;
+          li{
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;      
+            margin: 0 1rem;
+          }    
+        }
+      }
+    }  
+
+    .ContactText{
+      margin-bottom: 1rem !important;
+    }
+
+    .driverOn{
+      display: none;
+    }
+    .driverOff{
+      display: block;
+    }
+    .divider{
+      height: 70vh;
+      display: flex;
+      .ContactText{
+        display: flex;
+        justify-content: center;
+        width: 50% !important;
+        .ContactTextContainer{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+
+    #ContactForm{
+      margin-top: 0.5rem;
+      .FormContainer{
+        width: 40% !important;
+        min-height: 30vh;
+        background-color: rgba(0, 0, 0, 0.137);
+        box-shadow: 5px 5px 5px #0076b657;
+        margin: auto !important;
+        .SendMessage{
+          border-radius: 10px;
+          box-shadow: 5px 5px 5px #0076b657;
+          padding: 0.5rem 0 !important;
+          margin-top: 0rem !important;
+          .MessagePara{
+            padding-bottom: 1rem !important;
+          }
+          #Form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 !important;
+            .inputBackground{
+              background-color: #00579f;
+              box-shadow: inset 5px 5px 5px #00318067;
+              padding: 0.3rem;  
+              border-radius: 3px;
+            }
+            .BoxSize{
+              width: 90%;
+              border: none;
+            }
+            .MessagePara{
+              margin: 0.5rem;
+            }    
+            .MessageBox{
+              width: 90%;
+              box-sizing: border-box;
+              border: none;
+              margin-bottom: 0rem !important;
+            }
+            .btnContainer{
+              height: 40px !important;
+              p{
+                margin: 0;
+              }
+            }
+            .submit{
+              width: 90%;
+              box-sizing: border-box;
+              height: 30px;
+              background-color: transparent;
+              border: none;
+            }
+            #name::placeholder,#email::placeholder,#subject::placeholder,#messagebox::placeholder{
+              color: rgba(255, 255, 255, 0.712);    
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  @media only screen and (orientation: landscape) and (min-height:701px){
+    h1{
+      font-size: 60px;
+    }
+    h2{
+      font-size: 52px;
+    }
+    h3{
+      font-size: 40px;
+    }
+    button{
+      font-size: 20px;
+    }
+    p{
+      font-size: 40px !important;
+      font-weight: 800;
+    }
+    .OnlyLandscape{
+      display: block !important;
+    }
+    .DispLandOff{
+      display: none !important;
+    }
+    .DispLandOn{
+      display: block !important;
+    }
+    
+    .headerContainer{
+      .hamburgerSVG{
+        display: none;
+      }
+
+      .NavItemsLandscape{
+        list-style: none;
+        font-size: 16px;
+        display: flex;
+        li{
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;      
+          margin: 0 1rem;
+        }    
+      }
+
+    }
+
+    .ContactText{
+      margin-top: 1rem;
+    }
+
+    .divider{
+      display: flex;
+      .iconsContainer{
+        width: 50%;
+      }
+    }
+
+    #ContactForm{
+      height: 70vh !important;
+      .FormContainer{
+        width: 40% !important;
+        margin: auto !important;
+        min-height: 30vh;
+        background-color: rgba(0, 0, 0, 0.137);
+        box-shadow: 5px 5px 5px #0076b657;
+        .SendMessage{
+          border-radius: 10px;
+          box-shadow: 5px 5px 5px #0076b657;
+          padding: 1.5rem 0;
+          margin-top: 2rem;
+          .MessagePara{
+            padding-bottom: 2rem;
+          }
+          #Form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+            .inputBackground{
+              background-color: #00579f;
+              box-shadow: inset 5px 5px 5px #00318067;
+              padding: 0.3rem;  
+              border-radius: 3px;
+            }
+            .BoxSize{
+              width: 90%;
+              border: none;
+              margin-bottom: 1rem;
+            }
+            .MessageBox{
+              width: 90%;
+              box-sizing: border-box;
+              border: none;
+              margin-bottom: 1rem;
+            }
+            .submit{
+              width: 90%;
+              box-sizing: border-box;
+              height: 30px;
+              background-color: transparent;
+              border: none;
+            }
+            #name::placeholder,#email::placeholder,#subject::placeholder,#messagebox::placeholder{
+              color: rgba(255, 255, 255, 0.712);    
+            }
+          }
+        }
+      }
+    }
+
+    #Footer{
+      display: none;
+    }
+  }
+
+
+  
+  
+  @media only screen and (min-width:501px) and (max-width:768px) and (min-height:801px){
+    h1{
+      font-size: 60px;
+    }
+    h2{
+      font-size: 52px;
+    }
+    h3{
+      font-size: 40px;
+    }
+    button{
+      font-size: 32px;
+    }
+    p{
+      font-size: 40px !important;
+      font-weight: 800;
+    }
+
+    .ContactText{
+      margin-top: 2rem;
+    }
+
+        
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+  }
+  @media only screen and (min-width:769px) and (min-height:802px){
+    h1{
+      font-size: 72px;
+    
+    }
+    h2{
+      font-size: 60px;
+    }
+    h3{
+      font-size: 40px;
+    }
+    button{
+      font-size: 28px;
+    }
+    p{
+      font-size: 44px !important;
+      font-weight: 800;
+    }
+   
+    .ContactText{
+      margin-top: 2rem;
+    }
+
+    #Footer{
+      display: none;
+    }
+  }
+
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   background-size: cover;
@@ -204,16 +563,18 @@ body{
   }
 
   #ContactForm{
+    height: 60vh;
+    place-content: center;
     .FormContainer{
       width: 100%;
-      min-height: 30vh;
+      height: auto;
+      place-content: center;
       background-color: rgba(0, 0, 0, 0.137);
       box-shadow: 5px 5px 5px #0076b657;
       .SendMessage{
         border-radius: 10px;
         box-shadow: 5px 5px 5px #0076b657;
         padding: 1.5rem 0;
-        margin-top: 2rem;
         .MessagePara{
           padding-bottom: 2rem;
         }
@@ -222,7 +583,6 @@ body{
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 1rem 0;
           .inputBackground{
             background-color: #00579f;
             box-shadow: inset 5px 5px 5px #00318067;
@@ -239,6 +599,10 @@ body{
             box-sizing: border-box;
             border: none;
             margin-bottom: 1rem;
+          }
+          .btnContainer{
+            height: 70px;
+            margin: 1rem 0;
           }
           .submit{
             width: 90%;

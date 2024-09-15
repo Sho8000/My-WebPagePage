@@ -312,7 +312,7 @@ body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents h3 {
   transform: translateY(-50%);
 }
 body .swiper {
-  width: 90%;
+  width: 80%;
   height: 70vh;
 }
 body .swiper .swiper-wrapper .swiper-slide {

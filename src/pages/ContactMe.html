@@ -14,6 +14,22 @@
     <div class="headerContainer">
       <div class="headerAboutMe FirstFade FirstOpacity">
         <button class="MoveToOtherPages2" value="../index.html"><h2 class="Courgette">Sho Yoshimura</h2></button>
+
+        <ul class="NavItemsLandscape OnlyLandscape">
+          <li class="">
+            <button class="LinkUnderLi Courgette MoveToOtherPages2" value="../pages/AboutMe.html#">About Me</button>
+          </li>
+          <li class="">
+            <button class="LinkUnderLi Courgette MoveToOtherPages2" value="../pages/AboutMe.html#Skills">Skills</button>
+          </li>
+          <li class="">
+            <button class="LinkUnderLi Courgette MoveToOtherPages2" value="../pages/AboutMe.html#WorkExperience">WorkExperience</button>
+          </li>
+          <li class="">
+            <button class="LinkUnderLi Courgette MoveToOtherPages2" value="../pages/Project.html">Projects</button>
+          </li>
+        </ul>
+
         <div class="hamburgerSVG">
           <svg width="60" height="47">
             <rect x="10" y="10" rx="1" ry="1" width="40" height="2"
@@ -71,33 +87,46 @@
   </section>
 
   <section id="ContactTitle">
-    <div class="ContactText FirstFade FirstOpacity">
-      <h1 class="Courgette">Hit me up for</h1>
-      <h1 class="Courgette">Future Project</h1>  
+    <div class="ContactText FirstFade FirstOpacity driverOn">
+      <h1 class="Courgette DispLandOff">Hit me up for</h1>
+      <h1 class="Courgette DispLandOff">Future Project</h1>  
+      <h1 class="Courgette DispLandOn">Hit me up for Future Project</h1>  
     </div>
   </section>
 
   <section id="ContactForm">
-    <div class="FormContainer FirstFade FirstOpacity">
-      <div class="SendMessage">
-        <form id="Form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="dd6fd7ee-f4f8-4a07-9937-2416e8ea3f6c">
-          <input type="hidden" name="subject" value="Trying out ContactFORMS">
-          <input type="checkbox" name="botcheck" id="" style="display: none;">
-          <p class="Courgette MessagePara">Send a Message</p>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Full Name" class="BoxSize inputBackground" required>
-          <label for="name"></label>
-          <input type="email" id="email" name="email" placeholder="Email Address" class="BoxSize inputBackground" required>
-          <label for="subject"></label>
-          <input type="text" id="subject" name="subject" placeholder="Subject" class="BoxSize inputBackground" required>
-          <label for="messagePC"></label>
-          <label for="messagePhone"></label>
-          <textarea type="message" id="messagebox" name="messagePhone" placeholder="Message..." class="MessageBox inputBackground" rows="10"></textarea>
-          <button type="submit" class="submit LinkUnderLi">Submit</button>
-        </form>
-      </div>
+    <div class="divider">
+      <div class="ContactText FirstFade FirstOpacity driverOff">
+        <div class="ContactTextContainer">
+          <h1 class="Courgette">Hit me up for</h1>
+          <h1 class="Courgette">Future Project</h1>  
+          <p>Need to get in touch with me? Please fill out the form with your inquiry then click "Submit".</p>  
+        </div>
+      </div>  
+      <div class="FormContainer FirstFade FirstOpacity">
+        <div class="SendMessage">
+          <form id="Form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="dd6fd7ee-f4f8-4a07-9937-2416e8ea3f6c">
+            <input type="hidden" name="subject" value="Trying out ContactFORMS">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+            <p class="Courgette MessagePara">Send a Message</p>
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Full Name" class="BoxSize inputBackground" required>
+            <label for="name"></label>
+            <input type="email" id="email" name="email" placeholder="Email Address" class="BoxSize inputBackground" required>
+            <label for="subject"></label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" class="BoxSize inputBackground" required>
+            <label for="message"></label>
+            <textarea type="message" id="messagebox" name="message" placeholder="Message..." class="MessageBox inputBackground" rows="10"></textarea>
+            <div class="btnContainer">
+              <p class="LinkUnderLi">
+                <button type="submit" class="submit LinkUnderP">Submit</button>
+              </p>
+          </div>
+          </form>
+        </div>
 
+      </div>
     </div>
   </section>
 
