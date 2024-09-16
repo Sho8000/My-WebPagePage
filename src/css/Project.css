@@ -216,7 +216,7 @@ body {
   }
   body .headerContainer .NavItemsLandscape {
     display: flex;
-    margin: auto;
+    margin: 0;
   }
   body .headerContainer .NavItemsLandscape li {
     display: inline-block;

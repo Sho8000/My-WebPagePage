@@ -117,6 +117,10 @@ button {
   display: none;
 }
 
+.FooterHideOn {
+  display: none;
+}
+
 .Courgette {
   font-family: Courgette;
 }
@@ -142,6 +146,10 @@ p {
   font-weight: 800;
 }
 
+button {
+  font-size: 24px;
+}
+
 body {
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
@@ -149,244 +157,67 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
-@media only screen and (max-height: 801px) {
-  body h1 {
+@media only screen and (max-width: 540px) {
+  body h2 {
     font-size: 32px;
   }
-  body #HomeNav {
-    height: 80px !important;
+  body h3 {
+    font-size: 20px;
   }
-  body #HomeNav .headerContainer {
-    padding-top: 1rem !important;
+  body button {
+    font-size: 20px;
   }
-  body #ContactTitle .ContactText {
-    margin-bottom: 1rem !important;
+  body .driverOn {
+    display: none;
   }
-  body #ContactForm .FormContainer .SendMessage {
-    padding: 0.5rem 0 !important;
+  body .driverOff {
+    display: block;
   }
-  body #ContactForm .FormContainer .SendMessage .MessagePara {
-    padding-bottom: 1rem !important;
+  body .divider .ContactText {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    margin: 1rem auto 0 auto;
   }
-  body #ContactForm .FormContainer .SendMessage #Form .MessageBox {
-    margin-bottom: 0rem !important;
+  body .divider .ContactText p {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 20px !important;
+    font-weight: 400;
   }
-  body #ContactForm .FormContainer .SendMessage #Form .btnContainer {
-    height: 50px !important;
+  body .divider .ContactText .ContactTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  body .divider .FormContainer {
+    width: 100% !important;
+    margin: auto;
+  }
+  body .divider .FormContainer .btnContainer {
+    height: 40px !important;
+  }
+  body .divider .FormContainer .btnContainer p {
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
   }
 }
-@media only screen and (orientation: landscape) and (max-height: 800px) {
+@media only screen and (min-width: 541px) and (max-width: 768px) {
   body h1 {
     font-size: 48px;
   }
-  body p {
-    font-size: 32px !important;
-    font-weight: 400;
-    margin-top: 4rem;
-  }
-  body .OnlyLandscape {
-    display: block !important;
-  }
-  body .DispLandOff {
-    display: none !important;
-  }
-  body .DispLandOn {
-    display: block !important;
-  }
-  body #HomeNav .headerContainer .hamburgerSVG {
-    display: none;
-  }
-  body #HomeNav .headerContainer .NavItemsLandscape {
-    list-style: none;
-    font-size: 16px;
-    display: flex;
-  }
-  body #HomeNav .headerContainer .NavItemsLandscape li {
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    margin: 0 1rem;
-  }
-  body .driverOn {
-    display: none;
-  }
-  body .driverOff {
-    display: block;
-  }
-  body .divider {
-    height: 70vh;
-    display: flex;
-  }
-  body .divider .ContactText {
-    display: flex;
-    justify-content: center;
-    width: 50% !important;
-    margin-bottom: 1rem !important;
-  }
-  body .divider .ContactText p {
-    font-size: 20px !important;
-    font-weight: 400;
-    margin-top: 2rem;
-  }
-  body .divider .ContactText .ContactTextContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-  }
-  body #ContactForm {
-    margin-top: 0.5rem;
-  }
-  body #ContactForm .FormContainer {
-    width: 40% !important;
-    min-height: 30vh;
-    margin: auto !important;
-  }
-  body #ContactForm .FormContainer .SendMessage {
-    padding: 0.5rem 0 !important;
-    margin-top: 0rem !important;
-  }
-  body #ContactForm .FormContainer .SendMessage .MessagePara {
-    padding-bottom: 1rem !important;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form {
-    padding: 0 !important;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .MessagePara {
-    margin: 0.5rem;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .MessageBox {
-    margin-bottom: 0rem !important;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .btnContainer {
-    height: 40px !important;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .btnContainer p {
-    height: 35px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .btnContainer p button {
-    height: 50px !important;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .submit {
-    height: 20px !important;
-  }
-}
-@media only screen and (orientation: landscape) and (min-height: 801px) {
-  body h1 {
-    font-size: 60px;
-  }
   body h2 {
-    font-size: 52px;
-  }
-  body p {
-    font-size: 40px !important;
-    font-weight: 800;
-  }
-  body .OnlyLandscape {
-    display: block !important;
-  }
-  body .DispLandOff {
-    display: none !important;
-  }
-  body .DispLandOn {
-    display: block !important;
-  }
-  body .headerContainer .hamburgerSVG {
-    display: none;
-  }
-  body .headerContainer .NavItemsLandscape {
-    list-style: none;
-    font-size: 16px;
-    display: flex;
-  }
-  body .headerContainer .NavItemsLandscape li {
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    margin: 0 1rem;
-  }
-  body .driverOn {
-    display: none;
-  }
-  body .driverOff {
-    display: block;
-  }
-  body .divider {
-    height: 70vh;
-    display: flex;
-  }
-  body .divider .ContactText {
-    display: flex;
-    justify-content: center;
-    width: 50% !important;
-  }
-  body .divider .ContactText .ContactTextContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-  }
-  body .ContactText {
-    margin-top: 1rem;
-  }
-  body .ContactText p {
-    font-size: 32px !important;
-    font-weight: 400;
-    margin-top: 4rem;
-  }
-  body .divider {
-    display: flex;
-  }
-  body .divider .iconsContainer {
-    width: 50%;
-  }
-  body #ContactForm {
-    margin-top: 2rem;
-    height: 70vh !important;
-  }
-  body #ContactForm .FormContainer {
-    width: 40% !important;
-    margin: auto !important;
-    min-height: 30vh;
-  }
-  body #ContactForm .FormContainer .SendMessage .MessagePara {
-    margin: 0.5rem;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form {
-    padding: 1rem 0;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .btnContainer {
-    padding-top: 0.5rem;
-    height: 40px !important;
-  }
-  body #ContactForm .FormContainer .SendMessage #Form .btnContainer p {
-    height: 35px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 501px) and (max-width: 768px) and (min-height: 801px) {
-  body h1 {
-    font-size: 56px;
-  }
-  body h2 {
-    font-size: 52px;
-  }
-  body h3 {
     font-size: 40px;
   }
-  body button {
-    font-size: 32px;
+  body h3 {
+    font-size: 24px;
   }
-  body p {
-    font-size: 40px !important;
-    font-weight: 800;
+  body button {
+    font-size: 24px;
   }
   body .driverOn {
     display: none;
@@ -438,22 +269,45 @@ body {
     border-radius: 10px;
   }
 }
-@media only screen and (min-width: 769px) and (min-height: 802px) {
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
   body h1 {
-    font-size: 72px;
+    font-size: 48px;
   }
   body h2 {
-    font-size: 60px;
+    font-size: 30px;
   }
   body h3 {
-    font-size: 40px;
+    font-size: 24px;
   }
   body button {
-    font-size: 28px;
+    font-size: 18px;
   }
-  body p {
-    font-size: 44px !important;
-    font-weight: 800;
+  body .OnlyLandscape {
+    display: block !important;
+  }
+  body #HomeNav {
+    width: 100% !important;
+  }
+  body .headerContainer {
+    padding-top: 0 !important;
+    display: flex;
+    justify-content: space-around !important;
+  }
+  body .headerContainer .headerAboutMe {
+    display: flex;
+  }
+  body .headerContainer .hamburgerSVG {
+    display: none;
+  }
+  body .headerContainer .NavItemsLandscape {
+    display: flex;
+    margin: 0;
+  }
+  body .headerContainer .NavItemsLandscape li {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 1rem;
   }
   body .driverOn {
     display: none;
@@ -464,12 +318,12 @@ body {
   body .divider {
     height: 80vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   body .divider .ContactText {
     display: flex;
     justify-content: center;
-    width: 100% !important;
+    width: 50% !important;
     margin-top: 3rem;
   }
   body .divider .ContactText p {
@@ -485,7 +339,7 @@ body {
     width: 90%;
   }
   body .divider .FormContainer {
-    width: 60% !important;
+    width: 40% !important;
     margin: auto;
   }
   body .divider .FormContainer .btnContainer {
@@ -503,6 +357,154 @@ body {
   body #Footer .FooterContainer .Links img {
     margin: 0 3px;
     border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  body h1 {
+    font-size: 72px;
+  }
+  body h2 {
+    font-size: 40px;
+  }
+  body h3 {
+    font-size: 24px;
+  }
+  body button {
+    font-size: 20px;
+  }
+  body .OnlyLandscape {
+    display: block !important;
+  }
+  body .headerContainer {
+    padding-top: 0 !important;
+  }
+  body .headerContainer .headerAboutMe {
+    flex-direction: row !important;
+  }
+  body .headerContainer .hamburgerSVG {
+    display: none;
+  }
+  body .headerContainer .NavItemsLandscape {
+    display: flex;
+    margin: 0;
+  }
+  body .headerContainer .NavItemsLandscape li {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 1rem;
+  }
+  body .driverOn {
+    display: none;
+  }
+  body .driverOff {
+    display: block;
+  }
+  body .divider {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+  }
+  body .divider .ContactText {
+    display: flex;
+    justify-content: center;
+    width: 50% !important;
+    margin-top: 3rem;
+  }
+  body .divider .ContactText p {
+    margin: 2rem 0;
+    font-size: 28px !important;
+    font-weight: 400;
+  }
+  body .divider .ContactText .ContactTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  body .divider .FormContainer {
+    width: 40% !important;
+    margin: auto;
+  }
+  body .divider .FormContainer .btnContainer {
+    height: 40px !important;
+  }
+  body .divider .FormContainer .btnContainer p {
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  body #Footer .FooterContainer .Links {
+    height: 40px !important;
+  }
+  body #Footer .FooterContainer .Links img {
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-height: 901px) and (orientation: portrait) {
+  body .divider {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .divider .ContactText {
+    width: 80% !important;
+  }
+  body .divider .FormContainer {
+    width: 60% !important;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 900px) {
+  body #ContactForm .divider .ContactText .ContactTextContainer p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) and (max-height: 830px) {
+  body h1 {
+    font-size: 32px;
+  }
+  body #HomeNav {
+    height: 80px !important;
+  }
+  body #HomeNav .headerContainer {
+    padding-top: 1rem !important;
+  }
+  body #ContactTitle .ContactText {
+    margin-bottom: 1rem !important;
+  }
+  body #ContactForm .FormContainer .SendMessage {
+    padding: 0.5rem 0 !important;
+  }
+  body #ContactForm .FormContainer .SendMessage .MessagePara {
+    padding-bottom: 1rem !important;
+  }
+  body #ContactForm .FormContainer .SendMessage #Form .MessageBox {
+    margin-bottom: 0rem !important;
+  }
+  body #ContactForm .FormContainer .SendMessage #Form .btnContainer {
+    height: 50px !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-height: 730px) {
+  body .FooterHideOff {
+    display: none;
+  }
+  body .FooterHideOn {
+    display: inline;
+  }
+  body .FooterHideOn .Links {
+    height: 40px !important;
+    width: 100%;
+  }
+  body .FooterHideOn .Links img {
+    height: 100%;
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+  body #ContactForm .ContactText {
+    margin-top: 0 !important;
   }
 }
 body #HomeNav {
@@ -555,6 +557,7 @@ body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents {
   max-width: 100%;
   height: 25vh;
   justify-content: center;
+  background-color: black;
   border: 3px solid #003180;
   position: relative;
 }
