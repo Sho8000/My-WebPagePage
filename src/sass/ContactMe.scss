@@ -162,15 +162,15 @@ body{
     }
   }
 
-  @media only screen and (orientation: landscape) and (max-height:700px){
+  @media only screen and (orientation: landscape) and (max-height:800px){
     h1{
       font-size: 48px;
     }
     p{
-      font-size: 20px !important;
+      font-size: 32px !important;
       font-weight: 400;
-      margin-top: 2rem;
-    }
+      margin-top: 4rem;
+    }  
 
     .OnlyLandscape{
       display: block !important;
@@ -201,10 +201,6 @@ body{
       }
     }  
 
-    .ContactText{
-      margin-bottom: 1rem !important;
-    }
-
     .driverOn{
       display: none;
     }
@@ -218,7 +214,13 @@ body{
         display: flex;
         justify-content: center;
         width: 50% !important;
-        .ContactTextContainer{
+        margin-bottom: 1rem !important;
+        p{
+          font-size: 20px !important;
+          font-weight: 400;
+          margin-top: 2rem;
+        }  
+          .ContactTextContainer{
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -233,78 +235,49 @@ body{
       .FormContainer{
         width: 40% !important;
         min-height: 30vh;
-        background-color: rgba(0, 0, 0, 0.137);
-        box-shadow: 5px 5px 5px #0076b657;
         margin: auto !important;
         .SendMessage{
-          border-radius: 10px;
-          box-shadow: 5px 5px 5px #0076b657;
           padding: 0.5rem 0 !important;
           margin-top: 0rem !important;
           .MessagePara{
             padding-bottom: 1rem !important;
           }
           #Form{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 0 !important;
-            .inputBackground{
-              background-color: #00579f;
-              box-shadow: inset 5px 5px 5px #00318067;
-              padding: 0.3rem;  
-              border-radius: 3px;
-            }
-            .BoxSize{
-              width: 90%;
-              border: none;
-            }
             .MessagePara{
               margin: 0.5rem;
             }    
             .MessageBox{
-              width: 90%;
-              box-sizing: border-box;
-              border: none;
               margin-bottom: 0rem !important;
             }
             .btnContainer{
               height: 40px !important;
               p{
+                height: 35px;
                 margin: 0;
+                display: flex;
+                align-items: center;
+                button{
+                  height: 50px !important;
+                }
               }
             }
             .submit{
-              width: 90%;
-              box-sizing: border-box;
-              height: 30px;
-              background-color: transparent;
-              border: none;
-            }
-            #name::placeholder,#email::placeholder,#subject::placeholder,#messagebox::placeholder{
-              color: rgba(255, 255, 255, 0.712);    
+              height: 20px !important;
             }
           }
         }
       }
-    }
-
+    }  
 
   }
 
-  @media only screen and (orientation: landscape) and (min-height:701px){
+  @media only screen and (orientation: landscape) and (min-height:801px){
     h1{
       font-size: 60px;
     }
     h2{
       font-size: 52px;
-    }
-    h3{
-      font-size: 40px;
-    }
-    button{
-      font-size: 20px;
     }
     p{
       font-size: 40px !important;
@@ -339,8 +312,36 @@ body{
 
     }
 
+    .driverOn{
+      display: none;
+    }
+    .driverOff{
+      display: block;
+    }
+    .divider{
+      height: 70vh;
+      display: flex;
+      .ContactText{
+        display: flex;
+        justify-content: center;
+        width: 50% !important;
+        .ContactTextContainer{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          width: 90%;
+        }
+      }
+    }
+
     .ContactText{
       margin-top: 1rem;
+      p{
+        font-size: 32px !important;
+        font-weight: 400;
+        margin-top: 4rem;
+      }  
     }
 
     .divider{
@@ -351,70 +352,38 @@ body{
     }
 
     #ContactForm{
+      margin-top: 2rem;
       height: 70vh !important;
       .FormContainer{
         width: 40% !important;
         margin: auto !important;
         min-height: 30vh;
-        background-color: rgba(0, 0, 0, 0.137);
-        box-shadow: 5px 5px 5px #0076b657;
         .SendMessage{
-          border-radius: 10px;
-          box-shadow: 5px 5px 5px #0076b657;
-          padding: 1.5rem 0;
-          margin-top: 2rem;
           .MessagePara{
-            padding-bottom: 2rem;
+            margin: 0.5rem;
           }
           #Form{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 1rem 0;
-            .inputBackground{
-              background-color: #00579f;
-              box-shadow: inset 5px 5px 5px #00318067;
-              padding: 0.3rem;  
-              border-radius: 3px;
-            }
-            .BoxSize{
-              width: 90%;
-              border: none;
-              margin-bottom: 1rem;
-            }
-            .MessageBox{
-              width: 90%;
-              box-sizing: border-box;
-              border: none;
-              margin-bottom: 1rem;
-            }
-            .submit{
-              width: 90%;
-              box-sizing: border-box;
-              height: 30px;
-              background-color: transparent;
-              border: none;
-            }
-            #name::placeholder,#email::placeholder,#subject::placeholder,#messagebox::placeholder{
-              color: rgba(255, 255, 255, 0.712);    
+            .btnContainer{
+              padding-top: 0.5rem;
+              height: 40px !important;
+              p{
+                height: 35px;
+                margin: 0;
+                display: flex;
+                align-items: center;
+              }
             }
           }
         }
       }
-    }
+    }  
 
-    #Footer{
-      display: none;
-    }
   }
 
-
-  
-  
   @media only screen and (min-width:501px) and (max-width:768px) and (min-height:801px){
     h1{
-      font-size: 60px;
+      font-size: 56px;
     }
     h2{
       font-size: 52px;
@@ -430,10 +399,48 @@ body{
       font-weight: 800;
     }
 
-    .ContactText{
-      margin-top: 2rem;
+    .driverOn{
+      display: none;
     }
-
+    .driverOff{
+      display: block;
+    }
+    .divider{
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      .ContactText{
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        margin-top: 1rem;
+        p{
+          margin: 0.5rem 0 1rem 0;
+          font-size: 20px !important;
+          font-weight: 400;
+        }  
+        .ContactTextContainer{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          width: 90%;
+        }
+      }
+      .FormContainer{
+        width: 500px !important;
+        margin: auto;
+        .btnContainer{
+          height: 40px !important;
+          p{
+            height: 50px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
         
     #Footer{
       .FooterContainer{
@@ -448,6 +455,9 @@ body{
     }
 
   }
+
+  
+  
   @media only screen and (min-width:769px) and (min-height:802px){
     h1{
       font-size: 72px;
@@ -467,13 +477,61 @@ body{
       font-weight: 800;
     }
    
-    .ContactText{
-      margin-top: 2rem;
+    .driverOn{
+      display: none;
+    }
+    .driverOff{
+      display: block;
+    }
+    .divider{
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      .ContactText{
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        margin-top: 3rem;
+        p{
+          margin: 2rem 0;
+          font-size: 28px !important;
+          font-weight: 400;
+        }  
+        .ContactTextContainer{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          width: 90%;
+        }
+      }
+      .FormContainer{
+        width: 60% !important;
+        margin: auto;
+        .btnContainer{
+          height: 40px !important;
+          p{
+            height: 50px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
     }
 
     #Footer{
-      display: none;
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
     }
+
   }
 
   height: 100vh;

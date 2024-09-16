@@ -108,6 +108,221 @@ p{
 }
 
 body{
+  //Landscape
+  @media only screen and (orientation: landscape){
+    .swiper{
+      #slide1{
+        background-image: url(../resource/PokemonImgPC.png) !important;
+      }
+      #slide2{
+        background-image: url(../resource/CBImgPC.png) !important;
+      }  
+    }
+  }
+  //Only width
+  @media only screen and (max-width:540px){
+    h2{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    button{
+      font-size: 20px;
+    }
+    
+    .swiper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      .swiper-slide{
+        h2{
+          margin-top: 3rem !important;
+        }
+      }
+    }
+  }  
+
+  @media only screen and (min-width:541px) and (max-width:768px){
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    button{
+      font-size: 24px;
+    }
+    
+    .swiper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      .swiper-slide{
+        h2{
+          margin-top: 3rem !important;
+        }
+      }
+      #slide1{
+        background-image: url(../resource/PokemonImgPC.png) !important;
+      }
+      #slide2{
+        background-image: url(../resource/CBImgPC.png) !important;
+      }
+    }
+
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  
+  }  
+
+  @media only screen and (min-width:769px) and (max-width:1000px){
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    button{
+      font-size: 24px;
+    }
+
+    .OnlyLandscape{
+      display: block !important;
+    }
+    
+    .headerContainer{
+      .headerAboutMe{
+        display: flex;
+        flex-direction: column;
+      }
+      .hamburgerSVG{
+        display: none;
+      }
+
+      .NavItemsLandscape{
+        display: flex;
+        margin: auto;
+        li{
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;      
+          margin: 1rem;
+        }    
+      }
+    }
+    
+    .swiper{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      .swiper-slide{
+        h2{
+          margin-top: 3rem !important;
+        }
+      }
+      #slide1{
+        background-image: url(../resource/PokemonImgPC.png) !important;
+      }
+      #slide2{
+        background-image: url(../resource/CBImgPC.png) !important;
+      }
+    }
+
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  
+  }  
+
+  @media only screen and (min-width:1001px){
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    button{
+      font-size: 20px;
+    }
+
+    .OnlyLandscape{
+      display: block !important;
+    }
+    
+    .headerContainer{
+      padding-top: 0 !important;
+      .hamburgerSVG{
+        display: none;
+      }
+
+      .NavItemsLandscape{
+        display: flex;
+        margin: right;
+        li{
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;      
+          margin: 1rem;
+        }    
+      }
+    }
+    
+    .swiper{
+      width: 75% !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      .swiper-slide{
+        h2{
+          margin-top: 3rem !important;
+        }
+      }
+      #slide1{
+        background-image: url(../resource/PokemonImgPC.png) !important;
+      }
+      #slide2{
+        background-image: url(../resource/CBImgPC.png) !important;
+      }
+    }
+
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  
+  }  
+
+
+/*   
   @media only screen and (orientation: landscape){
     h1{
       font-size: 60px;
@@ -256,7 +471,7 @@ body{
       }
     }
   }
-
+ */
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   background-size: cover;
@@ -310,6 +525,7 @@ body{
             height: 25vh;
             justify-content: center;
             border: 3px solid #003180;
+            background-color: black;
             position: relative;
             img{
                 height: 100%;
