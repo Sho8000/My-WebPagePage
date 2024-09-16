@@ -105,6 +105,327 @@ p{
 
 
 body{
+  @media only screen and (min-width:541px) and (max-width:768px){
+    h1{
+      font-size: 44px;
+    }
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    button{
+      font-size: 24px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 800;
+    }    
+
+    #About{
+      .AboutContainer{
+        .ImgContainer{
+          margin-top: 2rem;
+          width: 300px !important;
+          height: 300px !important;
+        }
+        .LetterContainer{
+          position: absolute;
+          width: 300px !important;
+          height: 300px !important;
+          padding: 1rem 0 !important;
+        }
+        .transparentContainer{
+          position: absolute;
+          margin-top: 2rem;
+          width: 300px !important;
+          height: 300px !important;
+        }
+        .textArea{
+          width: 80%;
+          padding-top: 350px !important;
+          margin: auto;
+          p{
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+
+    #Skills{
+      .SkillsContainer{
+        .SkillBox{
+          p{
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  
+
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  
+  }  
+
+  @media only screen and (min-width:769px) and (max-width:1000px){
+    h1{
+      font-size: 52px;
+    }
+    h2{
+      font-size: 48px;
+    }
+    h3{
+      font-size: 28px;
+    }
+    button{
+      font-size: 28px;
+    }
+    p{
+      font-size: 24px;
+      font-weight: 800;
+    }    
+
+    #HomeNav{
+      width: 100% !important;
+    }
+    .headerContainer{
+      display: flex;
+      justify-content: space-around !important;
+      .headerAboutMe{
+        display: flex;
+      }
+
+      .NavItemsLandscape{
+        display: flex;
+        margin: 0;
+        li{
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;      
+          margin: 1rem;
+        }    
+      }
+    }
+
+    #About{
+      .AboutContainer{
+        .ImgContainer{
+          margin-top: 2rem;
+          width: 350px !important;
+          height: 350px !important;
+        }
+        .LetterContainer{
+          position: absolute;
+          width: 350px !important;
+          height: 350px !important;
+          padding: 1rem 0 !important;
+        }
+        .transparentContainer{
+          position: absolute;
+          margin-top: 2rem;
+          width: 350px !important;
+          height: 350px !important;
+        }
+        .textArea{
+          width: 80%;
+          padding-top: 400px !important;
+          margin: auto;
+          p{
+            font-size: 20px !important;
+          }
+        }
+      }
+    }
+
+    #Skills{
+      .SkillsContainer{
+        .SkillBox{
+          p{
+            font-size: 20px !important;
+            padding: 0 10% !important;
+          }
+          .ImgBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            height: 300px;
+            img{
+              max-width: auto !important;
+              max-height: 250px !important;
+            }
+          }
+        }
+      }
+    }
+
+    #WorkExperience{
+      .WEcontainer{
+        .WEbox{
+          p{
+            font-size: 20px !important;
+            padding: 0 10% !important;
+          }
+          .ImgBox{
+            place-content: center;
+            height: 100%;
+            margin: auto;
+            img{
+              max-width: auto !important;
+              max-height: 100% !important;
+              border: 1px white solid;
+            }
+          }
+        }  
+      }
+    }
+      
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  
+  }  
+
+  @media only screen and (min-width:1001px){
+    h1{
+      font-size: 56px;
+    }
+    h2{
+      font-size: 48px;
+    }
+    h3{
+      font-size: 28px;
+    }
+    button{
+      font-size: 28px;
+    }
+    
+    .headerContainer{
+      .headerAboutMe{
+        flex-direction: row !important;
+      }
+
+      .NavItemsLandscape{
+        display: flex;
+        margin: 0;
+        li{
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;      
+          margin: 1rem;
+        }    
+      }
+    }
+
+    #About{
+      .AboutContainer{
+      margin-top: 2rem;
+        .ImgContainer{
+          margin-top: 2rem;
+          width: 400px !important;
+          height: 400px !important;
+        }
+        .LetterContainer{
+          position: absolute;
+          width: 400px !important;
+          height: 400px !important;
+          padding: 2rem 0 !important;
+        }
+        .transparentContainer{
+          position: absolute;
+          margin-top: 2rem;
+          width: 400px !important;
+          height: 400px !important;
+        }
+        .textArea{
+          width: 80%;
+          padding-top: 450px !important;
+          margin: auto;
+          p{
+            font-size: 20px !important;
+          }
+        }
+      }
+    }
+  
+    #Skills{
+      .SkillsContainer{
+        .SkillBox{
+          p{
+            font-size: 20px !important;
+            padding: 0 10% !important;
+          }
+          .ImgBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            height: 300px;
+            img{
+              max-width: auto !important;
+              max-height: 250px !important;
+            }
+          }
+        }
+      }
+    }
+
+    #WorkExperience{
+      .WEcontainer{
+        .WEbox{
+          p{
+            font-size: 20px !important;
+            padding: 0 10% !important;
+          }
+          .ImgBox{
+            height: 100%;
+            margin: auto;
+            img{
+              max-width: auto !important;
+              max-height: 100% !important;
+              border: 1px white solid;
+            }
+          }
+        }  
+      }
+    }
+  
+
+    #Footer{
+      .FooterContainer{
+        .Links{
+          height: 40px !important;
+          img{
+            margin: 0 3px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  
+  }  
+
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   background-size: cover;
@@ -158,6 +479,7 @@ body{
             height: 25vh;
             justify-content: center;
             border: 3px solid #003180;
+            background-color: black;
             position: relative;
             img{
                 height: 100%;
@@ -199,13 +521,18 @@ body{
         }  
       }
       .LetterContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2rem;
         position: absolute;
         width: 250px;
         height: 250px;
         left: 50%;
+        text-align: center;
         transform: translatex(-50%);
         h1{
-          margin-top: 3rem;
+          padding: 1rem 0;
           color: white;
           text-shadow: 
           3px 3px 3px black, -3px -3px 3px black,
@@ -253,7 +580,7 @@ body{
           font-size: 16px;
         }
         .mask{
-          background-color: white !important;
+          background-color: white;
         }
     }
     }

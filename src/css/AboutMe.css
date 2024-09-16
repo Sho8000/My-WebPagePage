@@ -118,6 +118,250 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  body h1 {
+    font-size: 44px;
+  }
+  body h2 {
+    font-size: 40px;
+  }
+  body h3 {
+    font-size: 24px;
+  }
+  body button {
+    font-size: 24px;
+  }
+  body p {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  body #About .AboutContainer .ImgContainer {
+    margin-top: 2rem;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  body #About .AboutContainer .LetterContainer {
+    position: absolute;
+    width: 300px !important;
+    height: 300px !important;
+    padding: 1rem 0 !important;
+  }
+  body #About .AboutContainer .transparentContainer {
+    position: absolute;
+    margin-top: 2rem;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  body #About .AboutContainer .textArea {
+    width: 80%;
+    padding-top: 350px !important;
+    margin: auto;
+  }
+  body #About .AboutContainer .textArea p {
+    font-size: 18px !important;
+  }
+  body #Skills .SkillsContainer .SkillBox p {
+    font-size: 18px !important;
+  }
+  body #Footer .FooterContainer .Links {
+    height: 40px !important;
+  }
+  body #Footer .FooterContainer .Links img {
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+  body h1 {
+    font-size: 52px;
+  }
+  body h2 {
+    font-size: 48px;
+  }
+  body h3 {
+    font-size: 28px;
+  }
+  body button {
+    font-size: 28px;
+  }
+  body p {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  body #HomeNav {
+    width: 100% !important;
+  }
+  body .headerContainer {
+    display: flex;
+    justify-content: space-around !important;
+  }
+  body .headerContainer .headerAboutMe {
+    display: flex;
+  }
+  body .headerContainer .NavItemsLandscape {
+    display: flex;
+    margin: 0;
+  }
+  body .headerContainer .NavItemsLandscape li {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 1rem;
+  }
+  body #About .AboutContainer .ImgContainer {
+    margin-top: 2rem;
+    width: 350px !important;
+    height: 350px !important;
+  }
+  body #About .AboutContainer .LetterContainer {
+    position: absolute;
+    width: 350px !important;
+    height: 350px !important;
+    padding: 1rem 0 !important;
+  }
+  body #About .AboutContainer .transparentContainer {
+    position: absolute;
+    margin-top: 2rem;
+    width: 350px !important;
+    height: 350px !important;
+  }
+  body #About .AboutContainer .textArea {
+    width: 80%;
+    padding-top: 400px !important;
+    margin: auto;
+  }
+  body #About .AboutContainer .textArea p {
+    font-size: 20px !important;
+  }
+  body #Skills .SkillsContainer .SkillBox p {
+    font-size: 20px !important;
+    padding: 0 10% !important;
+  }
+  body #Skills .SkillsContainer .SkillBox .ImgBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+  }
+  body #Skills .SkillsContainer .SkillBox .ImgBox img {
+    max-width: auto !important;
+    max-height: 250px !important;
+  }
+  body #WorkExperience .WEcontainer .WEbox p {
+    font-size: 20px !important;
+    padding: 0 10% !important;
+  }
+  body #WorkExperience .WEcontainer .WEbox .ImgBox {
+    place-content: center;
+    height: 100%;
+    margin: auto;
+  }
+  body #WorkExperience .WEcontainer .WEbox .ImgBox img {
+    max-width: auto !important;
+    max-height: 100% !important;
+    border: 1px white solid;
+  }
+  body #Footer .FooterContainer .Links {
+    height: 40px !important;
+  }
+  body #Footer .FooterContainer .Links img {
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  body h1 {
+    font-size: 56px;
+  }
+  body h2 {
+    font-size: 48px;
+  }
+  body h3 {
+    font-size: 28px;
+  }
+  body button {
+    font-size: 28px;
+  }
+  body .headerContainer .headerAboutMe {
+    flex-direction: row !important;
+  }
+  body .headerContainer .NavItemsLandscape {
+    display: flex;
+    margin: 0;
+  }
+  body .headerContainer .NavItemsLandscape li {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    margin: 1rem;
+  }
+  body #About .AboutContainer {
+    margin-top: 2rem;
+  }
+  body #About .AboutContainer .ImgContainer {
+    margin-top: 2rem;
+    width: 400px !important;
+    height: 400px !important;
+  }
+  body #About .AboutContainer .LetterContainer {
+    position: absolute;
+    width: 400px !important;
+    height: 400px !important;
+    padding: 2rem 0 !important;
+  }
+  body #About .AboutContainer .transparentContainer {
+    position: absolute;
+    margin-top: 2rem;
+    width: 400px !important;
+    height: 400px !important;
+  }
+  body #About .AboutContainer .textArea {
+    width: 80%;
+    padding-top: 450px !important;
+    margin: auto;
+  }
+  body #About .AboutContainer .textArea p {
+    font-size: 20px !important;
+  }
+  body #Skills .SkillsContainer .SkillBox p {
+    font-size: 20px !important;
+    padding: 0 10% !important;
+  }
+  body #Skills .SkillsContainer .SkillBox .ImgBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+  }
+  body #Skills .SkillsContainer .SkillBox .ImgBox img {
+    max-width: auto !important;
+    max-height: 250px !important;
+  }
+  body #WorkExperience .WEcontainer .WEbox p {
+    font-size: 20px !important;
+    padding: 0 10% !important;
+  }
+  body #WorkExperience .WEcontainer .WEbox .ImgBox {
+    height: 100%;
+    margin: auto;
+  }
+  body #WorkExperience .WEcontainer .WEbox .ImgBox img {
+    max-width: auto !important;
+    max-height: 100% !important;
+    border: 1px white solid;
+  }
+  body #Footer .FooterContainer .Links {
+    height: 40px !important;
+  }
+  body #Footer .FooterContainer .Links img {
+    margin: 0 3px;
+    border-radius: 10px;
+  }
+}
 body #HomeNav {
   width: 90%;
   height: 100px;
@@ -169,6 +413,7 @@ body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents {
   height: 25vh;
   justify-content: center;
   border: 3px solid #003180;
+  background-color: black;
   position: relative;
 }
 body #HomeNav .headerContainer .NavContainer .NavProjectArea .contents img {
@@ -203,14 +448,19 @@ body #About .AboutContainer .ImgContainer img {
   border: 5px white solid;
 }
 body #About .AboutContainer .LetterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
   position: absolute;
   width: 250px;
   height: 250px;
   left: 50%;
+  text-align: center;
   transform: translatex(-50%);
 }
 body #About .AboutContainer .LetterContainer h1 {
-  margin-top: 3rem;
+  padding: 1rem 0;
   color: white;
   text-shadow: 3px 3px 3px black, -3px -3px 3px black, -3px 3px 3px black, 3px -3px 3px black, 3px 0px 3px black, -3px 0px 3px black, 0px 3px 3px black, 0px -3px 3px black;
 }
@@ -254,7 +504,7 @@ body #About .AboutContainer .languageArea .language {
   font-size: 16px;
 }
 body #About .AboutContainer .languageArea .mask {
-  background-color: white !important;
+  background-color: white;
 }
 body #Skills {
   min-height: 100vh;
