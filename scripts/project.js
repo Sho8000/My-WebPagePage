@@ -73,6 +73,11 @@ $(() => {
       window.location.href = `${$(this).val()}`;
     });
   })
+
+  //Go to Link
+  $("#slide1").on("click",function(){
+    window.location.href = `https://sho8000.github.io/Pokemon-Valorant/`;
+  })
   
   const swiper = new Swiper('.swiper', {
     // Optional parameters
