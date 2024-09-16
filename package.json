@@ -4,8 +4,8 @@
   "description": "My WebPage for my Portfolio.",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass -w src/sass:src/css",
-    "live": "live-server src --verbose",
+    "build:css": "sass -w sass:src/css",
+    "live": "live-server --verbose",
     "dev": "concurrently \"npm run build:css\" \"npm run live\""
   },
   "keywords": [],
