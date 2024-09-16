@@ -189,23 +189,28 @@ body{
 
   @media only screen and (min-width:769px) and (max-width:1000px){
     h2{
-      font-size: 40px;
+      font-size: 30px;
     }
     h3{
       font-size: 24px;
     }
     button{
-      font-size: 24px;
+      font-size: 18px;
     }
 
     .OnlyLandscape{
       display: block !important;
     }
-    
+
+    #HomeNav{
+      width: 100% !important;
+    }
     .headerContainer{
+      padding-top: 0 !important;
+      display: flex;
+      justify-content: space-around !important;
       .headerAboutMe{
         display: flex;
-        flex-direction: column;
       }
       .hamburgerSVG{
         display: none;
@@ -255,6 +260,40 @@ body{
   
   }  
 
+  @media only screen and (min-width:769px) and (min-height:1151px){
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    button{
+      font-size: 20px;
+    }
+
+    .headerContainer{
+      .headerAboutMe{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .hamburgerSVG{
+        display: none;
+      }
+
+      .NavItemsLandscape{
+        display: flex;
+        margin: auto;
+        li{
+          display: inline-block;
+          text-align: center;
+          font-size: 16px;      
+          margin: 1rem;
+        }    
+      }
+    }  
+  }  
+
   @media only screen and (min-width:1001px){
     h2{
       font-size: 40px;
@@ -272,13 +311,16 @@ body{
     
     .headerContainer{
       padding-top: 0 !important;
+      .headerAboutMe{
+        flex-direction: row !important;
+      }
       .hamburgerSVG{
         display: none;
       }
 
       .NavItemsLandscape{
         display: flex;
-        margin: right;
+        margin: 0;
         li{
           display: inline-block;
           text-align: center;
@@ -321,157 +363,8 @@ body{
   
   }  
 
+  
 
-/*   
-  @media only screen and (orientation: landscape){
-    h1{
-      font-size: 60px;
-    }
-    h2{
-      font-size: 52px;
-    }
-    h3{
-      font-size: 40px;
-    }
-    button{
-      font-size: 20px;
-    }
-    p{
-      font-size: 40px !important;
-      font-weight: 800;
-    }
-    .OnlyLandscape{
-      display: block !important;
-    }
-    
-    .headerContainer{
-      .hamburgerSVG{
-        display: none;
-      }
-
-      .NavItemsLandscape{
-        list-style: none;
-        font-size: 16px;
-        display: flex;
-        li{
-          display: inline-block;
-          text-align: center;
-          font-size: 16px;      
-          margin: 0 1rem;
-        }    
-      }
-
-    }
-
-    .swiper{
-      margin-top: 1rem;
-      .swiper-slide{
-        h2{
-          margin-top: 3rem !important;
-        }
-      }
-      #slide1{
-        background-image: url(../resource/PokemonImgPC.png) !important;
-      }
-      #slide2{
-        background-image: url(../resource/CBImgPC.png) !important;
-      }  
-    }
-  }
-  @media only screen and (min-width:501px) and (max-width:768px) and (min-height:801px){
-    h1{
-      font-size: 60px;
-    }
-    h2{
-      font-size: 52px;
-    }
-    h3{
-      font-size: 40px;
-    }
-    button{
-      font-size: 32px;
-    }
-    p{
-      font-size: 40px !important;
-      font-weight: 800;
-    }
-    
-    .swiper{
-      margin-top: 2rem;
-      .swiper-slide{
-        h2{
-          margin-top: 3rem !important;
-        }
-      }
-      #slide1{
-        background-image: url(../resource/PokemonImgPC.png) !important;
-      }
-      #slide2{
-        background-image: url(../resource/CBImgPC.png) !important;
-      }
-    }
-    
-    #Footer{
-      .FooterContainer{
-        .Links{
-          height: 40px !important;
-          img{
-            margin: 0 3px;
-            border-radius: 10px;
-          }
-        }
-      }
-    }
-
-  }
-  @media only screen and (min-width:769px) and (min-height:802px){
-    h1{
-      font-size: 72px;
-    
-    }
-    h2{
-      font-size: 60px;
-    }
-    h3{
-      font-size: 40px;
-    }
-    button{
-      font-size: 28px;
-    }
-    p{
-      font-size: 44px !important;
-      font-weight: 800;
-    }
-   
-    .swiper{
-      margin-top: 2rem;
-      .swiper-slide{
-        h2{
-          margin-top: 2rem !important;
-        }
-      }
-      #slide1{
-        background-image: url(../resource/PokemonImgPC.png) !important;
-      }
-      #slide2{
-        background-image: url(../resource/CBImgPC.png) !important;
-      }
-
-    }
-
-    #Footer{
-      .FooterContainer{
-        .Links{
-          height: 40px !important;
-          img{
-            margin: 0 3px;
-            border-radius: 10px;
-          }
-        }
-      }
-    }
-  }
- */
   height: 100vh;
   background-image: linear-gradient(to right top, #03045e, #011167, #001d70, #002778, #003180, #003a88, #00438f, #004c96, #00579f, #0062a7, #006caf, #0077b6);
   background-size: cover;
