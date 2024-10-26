@@ -131,6 +131,9 @@ body {
     background-image: url(../resource/PokemonImgPC.png) !important;
   }
   body .swiper #slide2 {
+    background-image: url(../resource/MovieSuggestingApp.png) !important;
+  }
+  body .swiper #slide3 {
     background-image: url(../resource/CBImgPC.png) !important;
   }
 }
@@ -177,6 +180,9 @@ body {
     background-image: url(../resource/PokemonImgPC.png) !important;
   }
   body .swiper #slide2 {
+    background-image: url(../resource/MovieSuggestingApp.png) !important;
+  }
+  body .swiper #slide3 {
     background-image: url(../resource/CBImgPC.png) !important;
   }
   body #Footer .FooterContainer .Links {
@@ -237,6 +243,9 @@ body {
     background-image: url(../resource/PokemonImgPC.png) !important;
   }
   body .swiper #slide2 {
+    background-image: url(../resource/MovieSuggestingApp.png) !important;
+  }
+  body .swiper #slide3 {
     background-image: url(../resource/CBImgPC.png) !important;
   }
   body #Footer .FooterContainer .Links {
@@ -322,6 +331,9 @@ body {
     background-image: url(../resource/PokemonImgPC.png) !important;
   }
   body .swiper #slide2 {
+    background-image: url(../resource/MovieSuggestingApp.png) !important;
+  }
+  body .swiper #slide3 {
     background-image: url(../resource/CBImgPC.png) !important;
   }
   body #Footer .FooterContainer .Links {
@@ -418,6 +430,11 @@ body .swiper .swiper-wrapper #slide1 {
   background-position: center;
 }
 body .swiper .swiper-wrapper #slide2 {
+  background-image: url(../resource/MovieSuggestingAppPhone.png);
+  background-size: cover;
+  background-position: center;
+}
+body .swiper .swiper-wrapper #slide3 {
   background-image: url(../resource/CBImgPhone.png);
   background-size: cover;
   background-position: center;

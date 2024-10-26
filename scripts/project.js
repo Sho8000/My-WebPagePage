@@ -78,6 +78,10 @@ $(() => {
   $("#slide1").on("click",function(){
     window.location.href = `https://sho8000.github.io/Pokemon-Valorant/`;
   })
+  $("#slide2").on("click",function(){
+    console.log("hello")
+    window.location.href = `https://sho8000.github.io/movie-suggestion-app/`;
+  })
   
   const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -96,7 +100,7 @@ $(() => {
     },
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
+//      nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     // And if we need scrollbar
